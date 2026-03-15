@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">D&amp;D VTT</string>
+
+    <!-- Initiative tracker -->
+    <string name="initiative_title">Initiative Tracker</string>
+    <string name="current_turn">Current Turn</string>
+    <string name="round_counter">Round %d</string>
+    <string name="next_turn_button">Next Turn</string>
+    <string name="roll_initiative">Roll Initiative</string>
+
+    <!-- Token actions -->
+    <string name="add_token">Add Token</string>
+    <string name="edit_token">Edit Token</string>
+    <string name="delete_token">Delete Token</string>
+
+    <!-- Settings -->
+    <string name="command_server_url">Command Server URL</string>
+    <string name="grid_size">Grid Size</string>
+    <string name="cell_size">Cell Size</string>
+
+    <!-- Touch instructions -->
+    <string name="drag_token">Drag token to move</string>
+    <string name="pinch_zoom">Pinch to zoom</string>
+    <string name="pan_map">Pan map with two fingers</string>
+    
+</resources>

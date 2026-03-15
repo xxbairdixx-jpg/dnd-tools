@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Top bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.Material3.App.ActionBar">
+        
+        <TextView
+            android:id="@+id/round_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Round 1"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/current_turn_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Turn:"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Main content area -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/main_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="?attr/actionBarSize">
+        
+        <com.veiledge.vtt.VTTView
+            android:id="@+id/vtt_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jarvis Companion</string>
+
+    <!-- Main chat screen -->
+    <string name="chat_title">Chat with Jarvis</string>
+    <string name="send_button_text">Send</string>
+    <string name="clear_history_text">Clear History</string>
+    
+    <!-- Settings screen -->
+    <string name="settings_title">Settings</string>
+    <string name="server_url_label">Server URL</string>
+    <string name="voice_on_off_label">Voice Assistant</string>
+    <string name="tts_voices_label">TTS Voices</string>
+
+    <!-- Messages -->
+    <string name="user_message_prefix">%s: %s</string>
+    <string name="assistant_message_prefix">Jarvis: %s</string>
+    
+    <!-- Camera -->
+    <string name="camera_button_text">Camera</string>
+    <string name="camera_taken_text">Photo captured!</string>
+
+    <!-- Error messages -->
+    <string name="connection_error">Connection error. Please check your internet connection.</string>
+    <string name="api_error">API error occurred.</string>
+    
+    <!-- Default server URL -->
+    <string name="default_server_url">http://192.168.0.222:1234</string>
+
+    <!-- Voice options -->
+    <string-array name="tts_voices">
+        <item>Default</item>
+        <item>Voice 1</item>
+        <item>Voice 2</item>
+        <item>Voice 3</item>
+    </string-array>
+</resources>

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D&D 5e VTT - The Veil's Edge</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #0a0a1a; color: #e0e0e0; overflow: hidden; height: 100vh; }
+.container { display: flex; height: 100vh; }
+
+/* Grid */
+.grid-area { flex: 1; position: relative; overflow: hidden; background: #0d0d1a; }
+.map-layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; }
+.grid-canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+.token-layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* Tokens */
+.token { position: absolute; border-radius: 50%; cursor: grab; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white; text-shadow: 1px 1px 2px black; box-shadow: 0 2px 8px rgba(0,0,0,0.6); transition: box-shadow 0.2s, transform 0.1s; user-select: none; z-index: 10; overflow: visible; }
+.token:hover { transform: scale(1.1); z-index: 20; }
+.token.dragging { cursor: grabbing; box-shadow: 0 4px 16px rgba(0,0,0,0.8); z-index: 30; }
+.token.current-turn { animation: pulse 1s infinite; border-color: #FFD700 !important; border-width: 4px !important; box-shadow: 0 0 20px 8px rgba(255, 215, 0, 0.6), 0 0 40px 15px rgba(255, 215, 0, 0.3) !important; }
+.token.current-turn::after { content: '⬆'; position: absolute; top: -30px; left: 50%; transform: translateX(-50%); font-size: 24px; color: #FFD700; animation: bounce 0.6s infinite alternate; text-shadow: 0 0 10px rgba(255,215,0,0.8); }
+@keyframes pulse { 0%, 100% { box-shadow: 0 0 20px 8px rgba(255, 215, 0, 0.6), 0 0 40px 15px rgba(255, 215, 0, 0.3); } 50% { box-shadow: 0 0 30px 12px rgba(255, 215, 0, 0.8), 0 0 60px 20px rgba(255, 215, 0, 0.4); } }
+@keyframes bounce { from { transform: translateX(-50%) translateY(0); } to { transform: translateX(-50%) translateY(-8px); } }
+.token.player { background: radial-gradient(circle at 30% 30%, #66bb6a, #2e7d32); border: 3px solid #4CAF50; }
+.token.enemy { background: radial-gradient(circle at 30% 30%, #ef5350, #b71c1c); border: 3px solid #F44336; }
+.token.enemy img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; position: absolute; top: 0; left: 0; }
+.token.npc { background: radial-gradient(circle at 30% 30%, #42a5f5, #1565c0); border: 3px solid #2196F3; }
+.token.neutral { background: radial-gradient(circle at 30% 30%, #ffee58, #f9a825); border: 3px solid #FFC107; color: #333; text-shadow: none; }
+/* pulse moved above for visibility */
+
+/* HP bar */
+.hp-bar { position: absolute; bottom: -6px; left: 50%; transform: translateX(-50%); height: 5px; background: rgba(0,0,0,0.7); border-radius: 3px; overflow: hidden; z-index: 6; }
+.hp-fill { height: 100%; background: #4CAF50; transition: width 0.3s; }
+.hp-fill.hurt { background: #FF9800; }
+.hp-fill.critical { background: #F44336; }
+
+/* Token label */
+.token-label { position: absolute; top: -16px; left: 50%; transform: translateX(-50%); font-size: 11px; white-space: nowrap; background: rgba(0,0,0,0.9); padding: 2px 6px; border-radius: 3px; z-index: 10; color: white; pointer-events: none; }
+
+/* Conditions */
+.conditions { position: absolute; top: -6px; right: -6px; display: flex; gap: 2px; }
+.condition-icon { width: 16px; height: 16px; border-radius: 50%; font-size: 10px; display: flex; align-items: center; justify-content: center; }
+
+/* Sidebar */
+.sidebar { width: 260px; background: #12122a; border-left: 2px solid #1a1a3a; display: flex; flex-direction: column; overflow-y: auto; }
+.sidebar h3 { padding: 12px; background: #1a1a3a; text-align: center; border-bottom: 1px solid #2a2a4a; }
+
+/* Initiative */
+.initiative-section { padding: 10px; }
+.round-counter { text-align: center; font-size: 1.1em; margin-bottom: 8px; color: #aaa; }
+.initiative-list { list-style: none; }
+.init-item { display: flex; align-items: center; padding: 6px 8px; margin-bottom: 4px; border-radius: 6px; background: #1a1a3a; cursor: pointer; }
+.init-item.current { background: rgba(76,175,80,0.25); border: 1px solid #4CAF50; }
+.init-name { flex: 1; font-size: 13px; }
+.init-roll { color: #aaa; font-size: 12px; }
+.init-hp { font-size: 11px; color: #888; }
+
+/* Controls */
+.controls-section { padding: 10px; border-top: 1px solid #2a2a4a; }
+.controls-section h4 { margin-bottom: 8px; color: #aaa; }
+.controls-section input, .controls-section select { width: 100%; padding: 6px; margin-bottom: 6px; background: #1a1a3a; color: white; border: 1px solid #2a2a4a; border-radius: 4px; font-size: 13px; }
+.btn { width: 100%; padding: 8px; margin-bottom: 4px; background: #2a2a5a; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; }
+.btn:hover { background: #3a3a7a; }
+.btn-danger { background: #5a2a2a; }
+.btn-danger:hover { background: #7a3a3a; }
+.btn-success { background: #2a5a2a; }
+.btn-success:hover { background: #3a7a3a; }
+
+/* Token detail modal */
+.modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 100; display: flex; align-items: center; justify-content: center; }
+.modal { background: #1a1a3a; padding: 20px; border-radius: 10px; min-width: 280px; }
+.modal h3 { margin-bottom: 12px; }
+.modal input, .modal select { width: 100%; padding: 6px; margin-bottom: 8px; background: #12122a; color: white; border: 1px solid #2a2a4a; border-radius: 4px; }
+.modal-buttons { display: flex; gap: 8px; margin-top: 12px; }
+.modal-buttons button { flex: 1; padding: 8px; border: none; border-radius: 4px; cursor: pointer; }
+
+/* Condition checkboxes */
+.condition-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-bottom: 8px; }
+.condition-grid label { font-size: 12px; display: flex; align-items: center; gap: 4px; cursor: pointer; }
+
+/* Upload */
+.map-upload { padding: 10px; border-top: 1px solid #2a2a4a; }
+.map-upload input[type="file"] { font-size: 11px; }
+
+/* Zoom controls */
+.zoom-controls { position: absolute; bottom: 10px; left: 10px; display: flex; gap: 5px; z-index: 50; }
+.zoom-controls button { width: 36px; height: 36px; background: #1a1a3a; color: white; border: 1px solid #2a2a4a; border-radius: 4px; cursor: pointer; font-size: 18px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="grid-area" id="gridArea">
+    <img class="map-layer" id="mapLayer" style="display:none;">
+    <canvas class="grid-canvas" id="gridCanvas"></canvas>
+    <div class="token-layer" id="tokenLayer"></div>
+    <div class="zoom-controls">
+      <button onclick="zoomIn()">+</button>
+      <button onclick="zoomOut()">−</button>
+      <button onclick="zoomReset()">⟲</button>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    <h3>⚔️ Initiative</h3>
+    <div class="initiative-section">
+      <div class="round-counter">Round: <span id="roundNum">1</span></div>
+      <ul class="initiative-list" id="initList"></ul>
+      <button class="btn btn-success" onclick="rollAllInitiative()">🎲 Roll Initiative</button>
+      <button class="btn" onclick="nextTurn()">Next Turn ➜</button>
+    </div>
+
+    <h3>🎭 Add Token</h3>
+    <div class="controls-section">
+      <input type="text" id="tokName" placeholder="Name (e.g. Goblin 1)">
+      <select id="tokType">
+        <option value="player">🟢 Player</option>
+        <option value="enemy">🔴 Enemy</option>
+        <option value="npc">🔵 NPC</option>
+        <option value="neutral">🟡 Neutral</option>
+      </select>
+      <input type="number" id="tokHP" placeholder="HP (e.g. 27)">
+      <input type="number" id="tokAC" placeholder="AC (e.g. 15)">
+      <button class="btn btn-success" onclick="addTokenFromForm()">➕ Add Token</button>
+    </div>
+
+    <h3>🗺️ Map</h3>
+    <div class="map-upload">
+      <input type="file" id="mapFile" accept="image/*" onchange="loadMap(event)">
+      <button class="btn" onclick="clearMap()">Clear Map</button>
+    </div>
+
+    <div class="controls-section" style="margin-top: auto; border-top: 1px solid #2a2a4a;">
+      <button class="btn btn-danger" onclick="clearAllTokens()">🗑️ Clear All Tokens</button>
+      <button class="btn" onclick="saveEncounter()">💾 Save Encounter</button>
+      <button class="btn" onclick="loadEncounter()">📂 Load Encounter</button>
+    </div>
+  </div>
+</div>
+
+<!-- Push to Talk -->
+<div id="ptt-area" style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%);z-index:50;display:flex;flex-direction:column;align-items:center;gap:8px;">
+  <div id="ptt-transcript" style="background:rgba(0,0,0,0.8);color:#fff;padding:8px 16px;border-radius:8px;font-size:14px;max-width:400px;text-align:center;display:none;"></div>
+  <button id="ptt-btn" style="width:80px;height:80px;border-radius:50%;background:#2a2a5a;border:4px solid #4CAF50;color:white;font-size:28px;cursor:pointer;box-shadow:0 4px 15px rgba(0,0,0,0.5);transition:all 0.15s;user-select:none;-webkit-user-select:none;">🎙️</button>
+  <span style="color:#888;font-size:12px;">Hold to talk to DM</span>
+</div>
+
+<script>
+// ============ PUSH TO TALK ============
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+let recognition = null;
+let isListening = false;
+
+if (SpeechRecognition) {
+  recognition = new SpeechRecognition();
+  recognition.continuous = false;
+  recognition.interimResults = true;
+  recognition.lang = 'en-US';
+
+  recognition.onresult = (e) => {
+    let transcript = '';
+    for (let i = 0; i < e.results.length; i++) {
+      transcript += e.results[i][0].transcript;
+    }
+    const transcriptDiv = document.getElementById('ptt-transcript');
+    transcriptDiv.style.display = 'block';
+    transcriptDiv.textContent = '🎤 ' + transcript;
+    
+    if (e.results[0].isFinal) {
+      // Send to DM via WebSocket
+      sendToDM(transcript);
+      setTimeout(() => { transcriptDiv.style.display = 'none'; }, 3000);
+    }
+  };
+
+  recognition.onerror = (e) => {
+    console.log('Speech error:', e.error);
+    isListening = false;
+    updatePTTButton();
+  };
+
+  recognition.onend = () => {
+    isListening = false;
+    updatePTTButton();
+  };
+}
+
+function sendToDM(text) {
+  // Send via WebSocket to voice DM agent (port 8767)
+  try {
+    const dmWs = new WebSocket('ws://localhost:9001');
+    dmWs.onopen = () => {
+      dmWs.send(JSON.stringify({ action: 'player_speech', text: text }));
+      dmWs.close();
+    };
+  } catch(e) {}
+  // Also display on VTT
+  const transcriptDiv = document.getElementById('ptt-transcript');
+  transcriptDiv.style.display = 'block';
+  transcriptDiv.textContent = '💬 "' + text + '"';
+  setTimeout(() => { transcriptDiv.style.display = 'none'; }, 5000);
+}
+
+const pttBtn = document.getElementById('ptt-btn');
+
+// Mouse events
+pttBtn.addEventListener('mousedown', startPTT);
+pttBtn.addEventListener('mouseup', stopPTT);
+pttBtn.addEventListener('mouseleave', stopPTT);
+
+// Touch events
+pttBtn.addEventListener('touchstart', (e) => { e.preventDefault(); startPTT(); });
+pttBtn.addEventListener('touchend', (e) => { e.preventDefault(); stopPTT(); });
+
+function startPTT() {
+  if (!recognition) {
+    alert('Speech recognition not supported in this browser. Use Chrome.');
+    return;
+  }
+  isListening = true;
+  updatePTTButton();
+  try { recognition.start(); } catch(e) {}
+}
+
+function stopPTT() {
+  isListening = false;
+  updatePTTButton();
+  try { recognition.stop(); } catch(e) {}
+}
+
+function updatePTTButton() {
+  pttBtn.style.background = isListening ? '#F44336' : '#2a2a5a';
+  pttBtn.style.borderColor = isListening ? '#FF5252' : '#4CAF50';
+  pttBtn.style.transform = isListening ? 'scale(1.1)' : 'scale(1)';
+  pttBtn.textContent = isListening ? '🔴' : '🎙️';
+}
+
+// Keyboard: hold spacebar for PTT
+document.addEventListener('keydown', (e) => {
+  if (e.code === 'Space' && e.target.tagName !== 'INPUT' && !isListening) {
+    e.preventDefault();
+    startPTT();
+  }
+});
+document.addEventListener('keyup', (e) => {
+  if (e.code === 'Space' && isListening) {
+    e.preventDefault();
+    stopPTT();
+  }
+});
+
+// ============ DM COMMAND POLLING ============
+async function pollDMCommands() {
+  try {
+    const res = await fetch('http://localhost:9000/commands');
+    if (res.ok) {
+      const cmds = await res.json();
+      cmds.forEach(cmd => handleCommand(cmd));
+    }
+  } catch(e) {}
+  setTimeout(pollDMCommands, 500);
+}
+pollDMCommands();
+
+// Report state periodically
+async function reportStateToDM() {
+  try {
+    const state = {
+      tokens: tokens.map(t => ({
+        name: t.name, type: t.type, hp: t.hp, maxHp: t.maxHp, ac: t.ac,
+        gridX: Math.round(t.x / (gridSize * zoom)),
+        gridY: Math.round(t.y / (gridSize * zoom)),
+        conditions: t.conditions
+      })),
+      round: round
+    };
+    await fetch('http://localhost:9000/state', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(state)
+    });
+  } catch(e) {}
+  setTimeout(reportStateToDM, 2000);
+}
+reportStateToDM();
+</script>
+
+<!-- Token Detail Modal -->
+<div class="modal-overlay" id="modalOverlay" style="display:none;" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <h3 id="modalTitle">Token Details</h3>
+    <label>HP: <input type="number" id="modalHP"> / <input type="number" id="modalMaxHP"></label>
+    <label>AC: <input type="number" id="modalAC"></label>
+    <label>Initiative: <input type="number" id="modalInit"></label>
+    <h4 style="margin-top:8px;">Conditions:</h4>
+    <div class="condition-grid">
+      <label><input type="checkbox" value="poisoned"> ☠️ Poisoned</label>
+      <label><input type="checkbox" value="stunned"> 💫 Stunned</label>
+      <label><input type="checkbox" value="prone"> 🏃 Prone</label>
+      <label><input type="checkbox" value="frightened"> 😱 Frightened</label>
+      <label><input type="checkbox" value="charmed"> 💕 Charmed</label>
+      <label><input type="checkbox" value="blinded"> 🙈 Blinded</label>
+      <label><input type="checkbox" value="restrained"> 🔗 Restrained</label>
+      <label><input type="checkbox" value="concentration"> 🎯 Concentration</label>
+    </div>
+    <div class="modal-buttons">
+      <button style="background:#4CAF50;color:white;" onclick="saveModal()">Save</button>
+      <button style="background:#F44336;color:white;" onclick="deleteToken()">Delete</button>
+      <button style="background:#555;color:white;" onclick="closeModal()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ============ STATE ============
+let tokens = [];
+let initiativeOrder = [];
+let currentTurnIndex = 0;
+let round = 1;
+let selectedTokenId = null;
+let gridSize = 50; // pixels per square
+let zoom = 1;
+let idCounter = 1;
+
+const gridCanvas = document.getElementById('gridCanvas');
+const tokenLayer = document.getElementById('tokenLayer');
+const ctx = gridCanvas.getContext('2d');
+
+// ============ INIT ============
+function init() {
+  resizeCanvas();
+  drawGrid();
+  window.addEventListener('resize', () => { resizeCanvas(); drawGrid(); });
+}
+
+function resizeCanvas() {
+  const area = document.getElementById('gridArea');
+  gridCanvas.width = area.clientWidth;
+  gridCanvas.height = area.clientHeight;
+}
+
+function drawGrid() {
+  ctx.clearRect(0, 0, gridCanvas.width, gridCanvas.height);
+  ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+  ctx.lineWidth = 1;
+  const sz = gridSize * zoom;
+  for (let x = 0; x < gridCanvas.width; x += sz) {
+    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, gridCanvas.height); ctx.stroke();
+  }
+  for (let y = 0; y < gridCanvas.height; y += sz) {
+    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(gridCanvas.width, y); ctx.stroke();
+  }
+}
+
+// ============ TOKENS ============
+function addToken(name, type, hp, ac, x, y) {
+  const id = idCounter++;
+  const token = { id, name, type, hp, maxHp: hp, ac, x, y, conditions: [], initRoll: 0 };
+  tokens.push(token);
+  renderToken(token);
+  updateInitiativeList();
+  return token;
+}
+
+function renderToken(t) {
+  const existing = document.getElementById('tok-' + t.id);
+  if (existing) existing.remove();
+
+  const el = document.createElement('div');
+  el.id = 'tok-' + t.id;
+  el.className = 'token ' + t.type;
+  
+  // Scale token with grid/zoom
+  const tokenSize = gridSize * zoom * 0.9; // 90% of grid cell
+  el.style.width = tokenSize + 'px';
+  el.style.height = tokenSize + 'px';
+  el.style.left = (t.x * zoom) + 'px';
+  el.style.top = (t.y * zoom) + 'px';
+  el.style.fontSize = (tokenSize * 0.35) + 'px';
+  el.textContent = t.name.charAt(0).toUpperCase();
+
+  // Token image
+  if (t.type === 'enemy' && t.name.toLowerCase().includes('goblin')) {
+    const img = document.createElement('img');
+    img.src = 'goblin-token.png';
+    img.style.cssText = 'width:100%;height:100%;object-fit:cover;border-radius:50%;position:absolute;top:0;left:0;z-index:1;';
+    img.onerror = () => { img.remove(); el.style.color = 'white'; };
+    el.style.color = 'transparent'; // hide initial letter, image shows instead
+    el.appendChild(img);
+  }
+
+  // Label
+  const label = document.createElement('div');
+  label.className = 'token-label';
+  label.textContent = t.name;
+  el.appendChild(label);
+
+  // HP bar
+  const hpBar = document.createElement('div');
+  hpBar.className = 'hp-bar';
+  hpBar.style.width = (tokenSize - 6) + 'px';
+  const hpFill = document.createElement('div');
+  hpFill.className = 'hp-fill';
+  const pct = t.maxHp > 0 ? (t.hp / t.maxHp) * 100 : 100;
+  hpFill.style.width = pct + '%';
+  if (pct < 30) hpFill.classList.add('critical');
+  else if (pct < 60) hpFill.classList.add('hurt');
+  hpBar.appendChild(hpFill);
+  el.appendChild(hpBar);
+
+  // Condition icons
+  if (t.conditions.length > 0) {
+    const condDiv = document.createElement('div');
+    condDiv.className = 'conditions';
+    const icons = { poisoned: '☠️', stunned: '💫', prone: '🏃', frightened: '😱', charmed: '💕', blinded: '🙈', restrained: '🔗', concentration: '🎯' };
+    t.conditions.forEach(c => {
+      const ci = document.createElement('span');
+      ci.className = 'condition-icon';
+      ci.textContent = icons[c] || '?';
+      ci.style.background = '#333';
+      condDiv.appendChild(ci);
+    });
+    el.appendChild(condDiv);
+  }
+
+  // Current turn highlight
+  if (initiativeOrder.length > 0 && initiativeOrder[currentTurnIndex] === t.id) {
+    el.classList.add('current-turn');
+  }
+
+  // Drag
+  setupDrag(el, t);
+
+  // Double click for details
+  el.addEventListener('dblclick', () => openModal(t));
+
+  tokenLayer.appendChild(el);
+}
+
+function setupDrag(el, t) {
+  let isDragging = false, startX, startY, origX, origY;
+
+  const onStart = (e) => {
+    // Players can only drag player tokens, DM can drag all
+    if (t.type === 'enemy' && !e.ctrlKey) {
+      // Allow if not a player token
+    }
+    isDragging = true;
+    el.classList.add('dragging');
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+    startX = clientX; startY = clientY;
+    origX = t.x; origY = t.y;
+    e.preventDefault();
+  };
+
+  const onMove = (e) => {
+    if (!isDragging) return;
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+    t.x = origX + (clientX - startX) / zoom;
+    t.y = origY + (clientY - startY) / zoom;
+    el.style.left = (t.x * zoom) + 'px';
+    el.style.top = (t.y * zoom) + 'px';
+  };
+
+  const onEnd = () => {
+    if (!isDragging) return;
+    isDragging = false;
+    el.classList.remove('dragging');
+    // Snap to grid (store base coords, not zoomed)
+    t.x = Math.round(t.x / gridSize) * gridSize;
+    t.y = Math.round(t.y / gridSize) * gridSize;
+    el.style.left = (t.x * zoom) + 'px';
+    el.style.top = (t.y * zoom) + 'px';
+  };
+
+  el.addEventListener('mousedown', onStart);
+  el.addEventListener('touchstart', onStart, { passive: false });
+  document.addEventListener('mousemove', onMove);
+  document.addEventListener('touchmove', onMove, { passive: false });
+  document.addEventListener('mouseup', onEnd);
+  document.addEventListener('touchend', onEnd);
+}
+
+function removeToken(id) {
+  tokens = tokens.filter(t => t.id !== id);
+  initiativeOrder = initiativeOrder.filter(i => i !== id);
+  const el = document.getElementById('tok-' + id);
+  if (el) el.remove();
+  updateInitiativeList();
+}
+
+// ============ INITIATIVE ============
+function rollAllInitiative() {
+  tokens.forEach(t => {
+    t.initRoll = Math.floor(Math.random() * 20) + 1;
+  });
+  initiativeOrder = tokens
+    .sort((a, b) => b.initRoll - a.initRoll)
+    .map(t => t.id);
+  currentTurnIndex = 0;
+  round = 1;
+  document.getElementById('roundNum').textContent = round;
+  updateInitiativeList();
+  refreshAllTokens();
+}
+
+function updateInitiativeList() {
+  const list = document.getElementById('initList');
+  list.innerHTML = '';
+  initiativeOrder.forEach((tokenId, idx) => {
+    const t = tokens.find(t => t.id === tokenId);
+    if (!t) return;
+    const li = document.createElement('li');
+    li.className = 'init-item' + (idx === currentTurnIndex ? ' current' : '');
+    const hpText = t.maxHp > 0 ? `${t.hp}/${t.maxHp}` : '';
+    li.innerHTML = `<span class="init-name">${t.name}</span><span class="init-roll">${t.initRoll}</span><span class="init-hp">${hpText}</span>`;
+    li.onclick = () => { currentTurnIndex = idx; updateInitiativeList(); refreshAllTokens(); };
+    list.appendChild(li);
+  });
+}
+
+function nextTurn() {
+  if (initiativeOrder.length === 0) return;
+  currentTurnIndex++;
+  if (currentTurnIndex >= initiativeOrder.length) {
+    currentTurnIndex = 0;
+    round++;
+    document.getElementById('roundNum').textContent = round;
+  }
+  updateInitiativeList();
+  refreshAllTokens();
+}
+
+// ============ MODAL ============
+function openModal(t) {
+  selectedTokenId = t.id;
+  document.getElementById('modalTitle').textContent = t.name;
+  document.getElementById('modalHP').value = t.hp;
+  document.getElementById('modalMaxHP').value = t.maxHp;
+  document.getElementById('modalAC').value = t.ac;
+  document.getElementById('modalInit').value = t.initRoll;
+  document.querySelectorAll('.condition-grid input').forEach(cb => {
+    cb.checked = t.conditions.includes(cb.value);
+  });
+  document.getElementById('modalOverlay').style.display = 'flex';
+}
+
+function saveModal() {
+  const t = tokens.find(t => t.id === selectedTokenId);
+  if (!t) return;
+  t.hp = parseInt(document.getElementById('modalHP').value) || t.hp;
+  t.maxHp = parseInt(document.getElementById('modalMaxHP').value) || t.maxHp;
+  t.ac = parseInt(document.getElementById('modalAC').value) || t.ac;
+  t.initRoll = parseInt(document.getElementById('modalInit').value) || t.initRoll;
+  t.conditions = [];
+  document.querySelectorAll('.condition-grid input:checked').forEach(cb => {
+    t.conditions.push(cb.value);
+  });
+  renderToken(t);
+  updateInitiativeList();
+  closeModal();
+}
+
+function deleteToken() {
+  removeToken(selectedTokenId);
+  closeModal();
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').style.display = 'none';
+  selectedTokenId = null;
+}
+
+// ============ FORM ============
+function addTokenFromForm() {
+  const name = document.getElementById('tokName').value || ('Token ' + idCounter);
+  const type = document.getElementById('tokType').value;
+  const hp = parseInt(document.getElementById('tokHP').value) || 10;
+  const ac = parseInt(document.getElementById('tokAC').value) || 10;
+  const x = 100 + Math.random() * 200;
+  const y = 100 + Math.random() * 200;
+  addToken(name, type, hp, ac, x, y);
+  document.getElementById('tokName').value = '';
+}
+
+// ============ MAP ============
+function loadMap(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = (ev) => {
+    const img = document.getElementById('mapLayer');
+    img.src = ev.target.result;
+    img.style.display = 'block';
+  };
+  reader.readAsDataURL(file);
+}
+
+function clearMap() {
+  document.getElementById('mapLayer').style.display = 'none';
+  document.getElementById('mapLayer').src = '';
+}
+
+// ============ ZOOM ============
+function zoomIn() { zoom = Math.min(zoom + 0.1, 3); drawGrid(); refreshAllTokens(); }
+function zoomOut() { zoom = Math.max(zoom - 0.1, 0.3); drawGrid(); refreshAllTokens(); }
+function zoomReset() { zoom = 1; drawGrid(); refreshAllTokens(); }
+
+// ============ SAVE/LOAD ============
+function saveEncounter() {
+  const data = { tokens, initiativeOrder, currentTurnIndex, round };
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'encounter.json';
+  a.click();
+}
+
+function loadEncounter() {
+  const input = document.createElement('input');
+  input.type = 'file';
+  input.accept = '.json';
+  input.onchange = (e) => {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      const data = JSON.parse(ev.target.result);
+      tokens = data.tokens || [];
+      initiativeOrder = data.initiativeOrder || [];
+      currentTurnIndex = data.currentTurnIndex || 0;
+      round = data.round || 1;
+      document.getElementById('roundNum').textContent = round;
+      // Re-render
+      tokenLayer.innerHTML = '';
+      tokens.forEach(t => renderToken(t));
+      updateInitiativeList();
+      // Update id counter
+      idCounter = Math.max(...tokens.map(t => t.id), 0) + 1;
+    };
+    reader.readAsText(file);
+  };
+  input.click();
+}
+
+function clearAllTokens() {
+  if (!confirm('Remove all tokens?')) return;
+  tokens = [];
+  initiativeOrder = [];
+  currentTurnIndex = 0;
+  round = 1;
+  document.getElementById('roundNum').textContent = 1;
+  tokenLayer.innerHTML = '';
+  updateInitiativeList();
+}
+
+function refreshAllTokens() {
+  tokens.forEach(t => renderToken(t));
+}
+
+// ============ SYNC (WebSocket) ============
+let ws;
+let isLocalChange = false;
+
+// Sync WS to VTT server (port 8765)
+// PTT WS to voice DM (port 8767) - separate connection
+let syncWs = null;
+
+function connectWS() {
+  try {
+    const wsUrl = `ws://${location.hostname}:8765`;
+    syncWs = new WebSocket(wsUrl);
+    ws = new WebSocket(wsUrl);
+    
+    // Ensure we send sync_request on connect
+    ws.onopen = () => {
+      ws.send(JSON.stringify({ action: 'sync_request' }));
+    };
+    
+    ws.onmessage = (e) => {
+      const msg = JSON.parse(e.data);
+      
+      if (msg.action === 'query_state') {
+        // Handle query_state from DM - send state_response
+        handleCommand(msg); // This will relay to DM clients
+      } else if (msg.action === 'state_response') {
+        // Relay state response back to browsers
+        broadcast('state_response', { data: msg.data });
+      } else if (msg.action === 'sync_state' || msg.action === 'sync_update') {
+        loadState(msg.data);
+      } else {
+        handleCommand(msg);
+      }
+    };
+    
+    ws.onclose = () => setTimeout(connectWS, 3000);
+    ws.onerror = () => {};
+  } catch(e) {}
+}
+
+function broadcast(action, data) {
+  if (ws && ws.readyState === 1) {
+    isLocalChange = true;
+    ws.send(JSON.stringify({ action, ...data }));
+    setTimeout(() => { isLocalChange = false; }, 100);
+  }
+}
+
+function broadcastState() {
+  // Send full state to sync new clients
+  const state = {
+    tokens: tokens.map(t => ({id:t.id,name:t.name,type:t.type,hp:t.hp,maxHp:t.maxHp,ac:t.ac,x:t.x,y:t.y,conditions:t.conditions,initRoll:t.initRoll})),
+    initiativeOrder,
+    currentTurnIndex,
+    round
+  };
+  broadcast('sync_update', { data: state });
+}
+
+function loadState(state) {
+  if (!state) return;
+  tokens = state.tokens || [];
+  initiativeOrder = state.initiativeOrder || [];
+  currentTurnIndex = state.currentTurnIndex || 0;
+  round = state.round || 1;
+  document.getElementById('roundNum').textContent = round;
+  tokenLayer.innerHTML = '';
+  tokens.forEach(t => renderToken(t));
+  updateInitiativeList();
+  idCounter = Math.max(...tokens.map(t => t.id), 0) + 1;
+}
+
+function handleCommand(cmd) {
+  switch(cmd.action) {
+    case 'add_token':
+      addToken(cmd.name, cmd.type, cmd.hp, cmd.ac, cmd.x || 100, cmd.y || 100);
+      break;
+    case 'move_token': {
+      const t = tokens.find(t => t.name.toLowerCase() === cmd.name.toLowerCase());
+      if (t) { t.x = cmd.x; t.y = cmd.y; renderToken(t); }
+      break;
+    }
+    case 'damage_token': {
+      const t = tokens.find(t => t.name.toLowerCase() == cmd.name);
+      if (t) { t.hp = Math.max(0, t.hp - cmd.amount); renderToken(t); updateInitiativeList(); }
+      break;
+    }
+    case 'heal_token': {
+      const t = tokens.find(t => t.name.toLowerCase() === cmd.name);
+      if (t) { t.hp = Math.min(t.maxHp, t.hp + cmd.amount); renderToken(t); updateInitiativeList(); }
+      break;
+    }
+    case 'remove_token': {
+      const t = tokens.find(t => t.name.toLowerCase() == cmd.name);
+      if (t) removeToken(t.id);
+      break;
+    }
+    case 'next_turn': nextTurn(); break;
+    case 'roll_initiative': rollAllInitiative(); break;
+    case 'set_condition': {
+      const t = tokens.find(t => t.name.toLowerCase() === cmd.name);
+      if (t && !t.conditions.includes(cmd.condition)) { t.conditions.push(cmd.condition); renderToken(t); }
+      break;
+    }
+    case 'remove_condition': {
+      const t = tokens.find(t => t.name.toLowerCase() == cmd.name);
+      if (t) { t.conditions = t.conditions.filter(c => c !== cmd.condition); renderToken(t); }
+      break;
+    }
+    case 'load_map': {
+      const img = document.getElementById('mapLayer');
+      img.src = cmd.url; img.style.display = 'block';
+      break;
+    }
+    case 'clear_all': clearAllTokens(); break;
+  }
+}
+
+// Also support HTTP API via polling
+async function pollCommands() {
+  try {
+    const res = await fetch('http://localhost:8765/api/commands');
+    if (res.ok) {
+      const cmds = await res.json();
+      cmds.forEach(handleCommand);
+    }
+  } catch(e) {}
+  setTimeout(pollCommands, 1000);
+}
+
+// ============ START ============
+init();
+connectWS();
+// pollCommands(); // Uncomment if using HTTP polling
+
+// Demo tokens
+// Load default map
+document.getElementById('mapLayer').src = 'sunward-map.jpg';
+document.getElementById('mapLayer').style.display = 'block';
+    addToken('Bairdi', 'player', 27, 15, 200, 200);
+addToken('Goblin 1', 'enemy', 7, 13, 400, 200);
+addToken('Goblin 2', 'enemy', 7, 13, 400, 300);
+addToken('Elder Theron', 'npc', 10, 10, 150, 350);
+
+// ============ DM COMMAND POLLING ============
+async function pollDMCommands() {
+  try {
+    const res = await fetch('http://localhost:9000/commands');
+    if (res.ok) {
+      const cmds = await res.json();
+      cmds.forEach(cmd => handleCommand(cmd));
+    }
+  } catch(e) {}
+  setTimeout(pollDMCommands, 500);
+}
+pollDMCommands();
+
+// Report state periodically
+async function reportStateToDM() {
+  try {
+    const state = {
+      tokens: tokens.map(t => ({
+        name: t.name, type: t.type, hp: t.hp, maxHp: t.maxHp, ac: t.ac,
+        gridX: Math.round(t.x / (gridSize * zoom)),
+        gridY: Math.round(t.y / (gridSize * zoom)),
+        conditions: t.conditions
+      })),
+      round: round
+    };
+    await fetch('http://localhost:9000/state', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(state)
+    });
+  } catch(e) {}
+  setTimeout(reportStateToDM, 2000);
+}
+reportStateToDM();
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.JarvisCompanion" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Base application theme. -->
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryDark">#0066cc</item>
+        <item name="backgroundColor">@color/background</item>
+        <item name="backgroundSecondary">@color/surface</item>
+        
+        <!-- Status bar color -->
+        <item name="android:windowDrawsSystemBarButtons">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:statusBarColor">@color/background</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <!-- Dark theme for chat bubbles -->
+    <style name="ChatBubbleTheme" parent="Theme.JarvisCompanion">
+        <item name="android:background">#1a1a2e</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <!-- User bubble theme -->
+    <style name="UserBubbleTheme" parent="ChatBubbleTheme">
+        <item name="android:background">@color/user_bubble</item>
+    </style>
+
+    <!-- Assistant bubble theme -->
+    <style name="AssistantBubbleTheme" parent="ChatBubbleTheme">
+        <item name="android:background">@color/assistant_bubble</item>
+    </style>
+</resources>

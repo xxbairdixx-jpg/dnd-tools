@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#0a0a1a</color>
+    <color name="surface">#1a1a2e</color>
+    <color name="accent">#00D4FF</color>
+    
+    <!-- Chat bubbles -->
+    <color name="user_bubble">#0066cc</color>
+    <color name="assistant_bubble">#333333</color>
+    
+    <!-- Status bar indicators -->
+    <color name="connected_indicator">#00ff00</color>
+    <color name="disconnected_indicator">#ff0000</color>
+    
+    <!-- Button colors -->
+    <color name="ptt_button_normal">#1a1a2e</color>
+    <color name="ptt_button_recording">#ff3333</color>
+    <color name="send_button">#00D4FF</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#ffffff</color>
+    <color name="text_secondary">#cccccc</color>
+</resources>

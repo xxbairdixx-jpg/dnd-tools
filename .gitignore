@@ -1,0 +1,19 @@
+# Build files
+.gradle/
+build/
+*.apk
+*.ap_
+
+# Audio files
+*.mp3
+
+# Maps (binary)
+*.jpg
+*.jpeg
+*.png
+!vtt-android/app/src/main/res/**/*.png
+
+# OS files
+.DS_Store
+
+# Gradle wrapper (we use system gradle)

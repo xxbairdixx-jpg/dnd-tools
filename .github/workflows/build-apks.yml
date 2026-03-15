@@ -1,0 +1,62 @@
+name: Build Android APKs
+
+on:
+  workflow_dispatch:  # Manual trigger
+  push:
+    branches: [main]
+
+jobs:
+  build-vtt:
+    name: Build VTT Android App
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+      
+      - name: Build VTT APK
+        working-directory: vtt-android
+        run: |
+          chmod +x gradlew 2>/dev/null || true
+          gradle assembleDebug --no-daemon
+      
+      - name: Upload VTT APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: vtt-android-debug
+          path: vtt-android/app/build/outputs/apk/debug/*.apk
+          retention-days: 90
+
+  build-jarvis:
+    name: Build Jarvis Companion App
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+      
+      - name: Build Jarvis APK
+        working-directory: jarvis-android
+        run: |
+          gradle assembleDebug --no-daemon
+      
+      - name: Upload Jarvis APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: jarvis-companion-debug
+          path: jarvis-android/app/build/outputs/apk/debug/*.apk
+          retention-days: 90
