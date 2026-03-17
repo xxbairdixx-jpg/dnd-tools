@@ -3,8 +3,8 @@
 import json, os, subprocess, time, urllib.request, re, random, asyncio, websockets, threading, queue
 
 # Config
-API = "http://192.168.0.222:1234/v1/chat/completions"
-MODEL = "zai-org/glm-4.6v-flash"
+API = "http://192.168.0.222:1234/v1"
+MODEL = "nvidia-nemotron-3-nano-4b"
 WS = os.path.expanduser("~/.openclaw/workspace")
 VOICE = "en-US-AndrewMultilingualNeural"
 CHAT = os.path.expanduser("~/voice-profiles/chat")

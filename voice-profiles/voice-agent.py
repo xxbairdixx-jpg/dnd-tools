@@ -8,7 +8,7 @@ import json, os, subprocess, sys, time, urllib.request, urllib.error
 
 # Config
 API_URL = "http://192.168.0.222:1234/v1/chat/completions"
-MODEL = "zai-org/glm-4.6v-flash"
+MODEL = "nvidia-nemotron-3-nano-4b"
 WORKSPACE = os.path.expanduser("~/.openclaw/workspace")
 VOICE = "en-US-AndrewMultilingualNeural"
 CHAT_DIR = os.path.expanduser("~/voice-profiles/chat")
