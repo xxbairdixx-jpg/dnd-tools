@@ -1,0 +1,276 @@
+- **Merchants:**
+  - Name: Galdor the Gemcutter
+    - Race: Human
+    - Role/Class: Merchant, Artisan
+    - Personality trait: Slightly boastful about his craftsmanship.
+    - Ideal: To be recognized as the best gemcutter in the region.
+    - Bond: His family's legacy of fine jewelry is at stake.
+    - Flaw: Can be easily swayed by flattery or a good deal.
+    - Voice tip: Warm, slightly accented voice with a hint of pride.
+    - Backstory: Galdor grew up in a family of jewelers and has always been passionate about crafting beautiful gems. His shop is known for its exquisite pieces, but he struggles to maintain his reputation against newer competitors.
+  - Name: Lirael the Leatherworker
+    - Race: Elf
+    - Role/Class: Merchant, Artisan
+    - Personality trait: Quiet and reserved.
+    - Ideal: To create items that are both beautiful and practical.
+    - Bond: His wife's safety is his top priority.
+    - Flaw: Overly cautious in business dealings.
+    - Voice tip: Soft, melodic voice with a gentle tone.
+    - Backstory: Lirael has dedicated himself to preserving the traditions of elven craftsmanship. He runs a small shop that specializes in high-quality leather goods, and his work is highly regarded among his peers.
+  - Name: Thrain Ironfist
+    - Race: Dwarf
+    - Role/Class: Merchant, Artisan
+    - Personality trait: Gruff but fair.
+    - Ideal: To uphold the honor of his clan through commerce.
+    - Bond: His family's ironworks are a source of pride and strength.
+    - Flaw: Tends to overthink decisions, sometimes to his detriment.
+    - Voice tip: Deep, resonant voice with a strong accent.
+    - Backstory: Thrain is the owner of a small forge that produces high-quality iron goods. He values honesty and integrity in all his dealings, even if it means taking a loss on occasion.
+  - Name: Tyla the Tailor
+    - Race: Half-Elf
+    - Role/Class: Merchant, Artisan
+    - Personality trait: Quick-witted and charming.
+    - Ideal: To create clothing that both looks good and fits well.
+    - Bond: Her customers are like family to her.
+    - Flaw: Can be a bit of a show-off when it comes to her creations.
+    - Voice tip: Light, playful voice with an accent.
+    - Backstory: Tyla runs a small tailor's shop that caters to both common folk and nobles. She is known for her ability to create custom garments that fit perfectly and look stunning.
+  - Name: Maris the Merchant
+    - Race: Half-Orc
+    - Role/Class: Merchant, Artisan
+    - Personality trait: Straightforward and blunt.
+    - Ideal: To make a profit no matter what.
+    - Bond: His clan's survival is his primary concern.
+    - Flaw: Can be ruthless in negotiations.
+    - Voice tip: Deep, gruff voice with a hint of menace.
+    - Backstory: Maris comes from a long line of traders who have survived through cunning and shrewd business practices. He runs a small shop that deals in a variety of goods, often at cutthroat prices.
+- **Guards:**
+  - Name: Seraphine the Watcher
+    - Race: Human
+    - Role/Class: Soldier, Lawkeeper
+    - Personality trait: Disciplined and focused.
+    - Ideal: To uphold the law and protect the innocent.
+    - Bond: Her family's legacy of service to their city is important to her.
+    - Flaw: Can be overly rigid in enforcing rules.
+    - Voice tip: Steady, authoritative voice with a hint of sternness.
+    - Backstory: Seraphine joined the guard force after losing her family during an attack on her hometown. She now dedicates herself to ensuring that such tragedies do not happen again by keeping watch over the city's streets and citizens.
+  - Name: Kaelus the Sentry
+    - Race: Half-Orc
+    - Role/Class: Soldier, Lawkeeper
+    - Personality trait: Impulsive but brave.
+    - Ideal: To prove himself as a true warrior.
+    - Bond: His honor is everything to him.
+    - Flaw: Can be reckless in battle.
+    - Voice tip: Low, gravelly voice with a hint of aggression.
+    - Backstory: Kaelus was born into a family of warriors and has always been driven by the desire to prove his worth. He joined the guard force as a way to test himself against the toughest challenges.
+  - Name: Tavros the Sentry
+    - Race: Half-Elf
+    - Role/Class: Soldier, Lawkeeper
+    - Personality trait: Cautious and observant.
+    - Ideal: To serve with honor and distinction.
+    - Bond: His duty to his city is his highest priority.
+    - Flaw: Can be overly cautious in situations where quick action is needed.
+    - Voice tip: Soft, whispery voice with a hint of caution.
+    - Backstory: Tavros was trained from an early age to serve as a sentry and has spent years patrolling the city's walls. He takes his duty very seriously and is known for his unwavering vigilance.
+  - Name: Ralos the Watcher
+    - Race: Dwarf
+    - Role/Class: Soldier, Lawkeeper
+    - Personality trait: Resilient and stoic.
+    - Ideal: To defend his home with all his might.
+    - Bond: His family's legacy of service to their city is important to him.
+    - Flaw: Can be overly stubborn in the face of danger.
+    - Voice tip: Deep, resonant voice with a strong accent.
+    - Backstory: Ralos grew up in a dwarven fortress and has always been trained for battle. He joined the guard force as a way to continue serving his city and protecting its people from harm.
+  - Name: Vaela the Watcher
+    - Race: Elf
+    - Role/Class: Soldier, Lawkeeper
+    - Personality trait: Graceful and agile.
+    - Ideal: To protect those who cannot protect themselves.
+    - Bond: Her family's history of serving in the guard force is important to her.
+    - Flaw: Can be overly compassionate in dangerous situations.
+    - Voice tip: Soft, melodic voice with a gentle tone.
+    - Backstory: Vaela was born into a family of guards and has always been driven by the desire to serve and protect. She now dedicates herself to ensuring the safety of her city's citizens through her role as a guard.
+- **Nobles:**
+  - Name: Lord Eldric Blackwood
+    - Race: Human
+    - Role/Class: Noble, Landowner
+    - Personality trait: Arrogant and haughty.
+    - Ideal: To maintain the status quo and keep his family's wealth intact.
+    - Bond: His family's legacy of power is important to him.
+    - Flaw: Can be dismissive of those he deems inferior or unworthy.
+    - Voice tip: Deep, baritone voice with a hint of superiority.
+    - Backstory: Lord Eldric inherited his title and lands from his ancestors. He is known for his opulent lifestyle and strict adherence to tradition, but beneath his haughty exterior lies a deep-seated fear of losing everything he has worked so hard to maintain.
+  - Name: Lady Elara Silvermoon
+    - Race: Elf
+    - Role/Class: Noble, Landowner
+    - Personality trait: Graceful and elegant.
+    - Ideal: To preserve the beauty of nature for future generations.
+    - Bond: Her family's history as stewards of their lands is important to her.
+    - Flaw: Can be overly idealistic in matters of state.
+    - Voice tip: Soft, melodic voice with a gentle tone.
+    - Backstory: Lady Elara was born into a family that has long cared for the natural beauty of their region. She now dedicates herself to ensuring that her lands remain protected and preserved for future generations to enjoy.
+  - Name: Baroness Lysandra Ironfist
+    - Race: Dwarf
+    - Role/Class: Noble, Landowner
+    - Personality trait: Ruthless and cunning.
+    - Ideal: To expand the borders of her family's holdings at any cost.
+    - Bond: Her family's legacy of strength is important to her.
+    - Flaw: Can be overly cruel in dealing with those who stand in her way.
+    - Voice tip: Deep, gravelly voice with a hint of menace.
+    - Backstory: Baroness Lysandra inherited her title and lands from her ancestors. She is known for her ruthless tactics and willingness to do whatever it takes to secure her family's position at the top of the social hierarchy.
+  - Name: Countess Valeria Bloodstone
+    - Race: Half-Elf
+    - Role/Class: Noble, Landowner
+    - Personality trait: Intimidating and commanding.
+    - Ideal: To maintain the honor and reputation of her family name.
+    - Bond: Her family's history as leaders in their region is important to her.
+    - Flaw: Can be overly controlling in matters of state.
+    - Voice tip: Low, growling voice with a hint of authority.
+    - Backstory: Countess Valeria was born into a family that has long held significant power and influence. She now dedicates herself to ensuring the continued success and prosperity of her family's name through shrewd political maneuvering and strategic alliances.
+  - Name: Lord Thorne Blackwood
+    - Race: Human
+    - Role/Class: Noble, Landowner
+    - Personality trait: Cold and calculating.
+    - Ideal: To maintain the power and influence of his family at all costs.
+    - Bond: His family's legacy of strength is important to him.
+    - Flaw: Can be overly paranoid in matters of state.
+    - Voice tip: Low, deep voice with a hint of menace.
+    - Backstory: Lord Thorne inherited his title and lands from his ancestors. He is known for his ruthless tactics and willingness to do whatever it takes to secure his family's position at the top of the social hierarchy.
+- **Commoners:**
+  - Name: Jorin the Farmer
+    - Race: Human
+    - Role/Class: Peasant, Farmer
+    - Personality trait: Hardworking and resilient.
+    - Ideal: To provide for his family and ensure their survival.
+    - Bond: His children are everything to him.
+    - Flaw: Can be overly protective of his land and resources.
+    - Voice tip: Deep, steady voice with a hint of determination.
+    - Backstory: Jorin is a farmer who works hard every day to provide for his family. He takes great pride in his work and considers it his duty to ensure that his children have enough food and shelter. His land is his lifeblood, and he will defend it at all costs.
+  - Name: Mira the Weaver
+    - Race: Human
+    - Role/Class: Peasant, Artisan
+    - Personality trait: Creative and resourceful.
+    - Ideal: To create beautiful things with her hands.
+    - Bond: Her family's legacy of craftsmanship is important to her.
+    - Flaw: Can be overly perfectionistic in her work.
+    - Voice tip: Soft, melodic voice with a gentle tone.
+    - Backstory: Mira is a weaver who has spent years perfecting her craft. She takes great pride in the beauty and quality of her creations and considers it her duty to pass on this skill to future generations. Her family's legacy as master craftsmen is important to her, and she will do whatever it takes to ensure that their skills are preserved.
+  - Name: Grom the Smith
+    - Race: Human
+    - Role/Class: Peasant, Artisan
+    - Personality trait: Skilled but gruff.
+    - Ideal: To provide for his family through honest labor.
+    - Bond: His wife and children are everything to him.
+    - Flaw: Can be overly protective of his trade secrets.
+    - Voice tip: Deep, resonant voice with a hint of authority.
+    - Backstory: Grom is a blacksmith who has spent years honing his craft. He takes great pride in the quality and durability of his work and considers it his duty to provide for his family through honest labor. His trade secrets are closely guarded, as he knows that they are essential to maintaining his livelihood.
+  - Name: Lila the Herbalist
+    - Race: Human
+    - Role/Class: Peasant, Artisan
+    - Personality trait: Knowledgeable and wise.
+    - Ideal: To help others with her knowledge of herbs and plants.
+    - Bond: Her family's legacy as healers is important to her.
+    - Flaw: Can be overly trusting of strangers who seek her aid.
+    - Voice tip: Soft, soothing voice with a gentle tone.
+    - Backstory: Lila is an herbalist who has spent years studying the properties and uses of plants. She takes great pride in using her knowledge to help others and considers it her duty to pass on this skill to future generations. Her family's legacy as healers is important to her, and she will do whatever it takes to ensure that their skills are preserved.
+  - Name: Thaddeus the Baker
+    - Race: Human
+    - Role/Class: Peasant, Artisan
+    - Personality trait: Friendly and jovial.
+    - Ideal: To provide for his family through honest labor.
+    - Bond: His wife and children are everything to him.
+    - Flaw: Can be overly generous with his time and resources.
+    - Voice tip: Warm, friendly voice with a hint of humor.
+    - Backstory: Thaddeus is a baker who has spent years honing his craft. He takes great pride in the quality and taste of his bread and considers it his duty to provide for his family through honest labor. His generosity extends beyond just his work, as he enjoys sharing his food with others and making friends wherever he goes.
+- **Criminals:**
+  - Name: Vex the Pickpocket
+    - Race: Human
+    - Role/Class: Criminal, Rogue
+    - Personality trait: Sly and cunning.
+    - Ideal: To live a life of ease through thievery.
+    - Bond: His family's legacy as thieves is important to him.
+    - Flaw: Can be overly paranoid in his dealings with others.
+    - Voice tip: Soft, whispery voice with a hint of menace.
+    - Backstory: Vex was born into a family of thieves and has always been driven by the desire for wealth and freedom. He now dedicates himself to living a life of ease through thievery and considers his family's legacy as important to him. His paranoia often gets in the way of his plans, but he is determined to succeed no matter what.
+  - Name: Renn the Burglar
+    - Race: Human
+    - Role/Class: Criminal, Rogue
+    - Personality trait: Cunning and resourceful.
+    - Ideal: To outwit his enemies and come out on top.
+    - Bond: His family's legacy as thieves is important to him.
+    - Flaw: Can be overly ruthless in his dealings with others.
+    - Voice tip: Low, gravelly voice with a hint of aggression.
+    - Backstory: Renn was born into a family of thieves and has always been driven by the desire for wealth and freedom. He now dedicates himself to outwitting his enemies and coming out on top through cunning and resourcefulness. His ruthlessness often gets him into trouble, but he is determined to succeed no matter what.
+  - Name: Jax the Cutpurse
+    - Race: Human
+    - Role/Class: Criminal, Rogue
+    - Personality trait: Impulsive and reckless.
+    - Ideal: To live a life of adventure through thievery.
+    - Bond: His family's legacy as thieves is important to him.
+    - Flaw: Can be overly careless in his dealings with others.
+    - Voice tip: High, sharp voice with a hint of excitement.
+    - Backstory: Jax was born into a family of thieves and has always been driven by the desire for wealth and freedom. He now dedicates himself to living a life of adventure through thievery and considers his family's legacy as important to him. His impulsiveness often gets him in trouble, but he is determined to succeed no matter what.
+  - Name: Zephyr the Cutpurse
+    - Race: Half-Elf
+    - Role/Class: Criminal, Rogue
+    - Personality trait: Sly and cunning.
+    - Ideal: To live a life of ease through thievery.
+    - Bond: His family's legacy as thieves is important to him.
+    - Flaw: Can be overly paranoid in his dealings with others.
+    - Voice tip: Soft, whispery voice with a hint of menace.
+    - Backstory: Zephyr was born into a family of thieves and has always been driven by the desire for wealth and freedom. He now dedicates himself to living a life of ease through thievery and considers his family's legacy as important to him. His paranoia often gets in the way of his plans, but he is determined to succeed no matter what.
+  - Name: Thorne the Cutpurse
+    - Race: Half-Orc
+    - Role/Class: Criminal, Rogue
+    - Personality trait: Impulsive and reckless.
+    - Ideal: To live a life of adventure through thievery.
+    - Bond: His family's legacy as thieves is important to him.
+    - Flaw: Can be overly careless in his dealings with others.
+    - Voice tip: High, sharp voice with a hint of excitement.
+    - Backstory: Thorne was born into a family of thieves and has always been driven by the desire for wealth and freedom. He now dedicates himself to living a life of adventure through thievery and considers his family's legacy as important to him. His impulsiveness often gets him in trouble, but he is determined to succeed no matter what.
+- **Mysterious:**
+  - Name: Elara the Seer
+    - Race: Elf
+    - Role/Class: Mysterious, Oracle
+    - Personality trait: Insightful and intuitive.
+    - Ideal: To guide others with her knowledge of the future.
+    - Bond: Her family's legacy as seers is important to her.
+    - Flaw: Can be overly trusting of those who seek her guidance.
+    - Voice tip: Soft, melodic voice with a gentle tone.
+    - Backstory: Elara is an elf who has spent years studying the ancient arts of divination. She takes great pride in using her knowledge to guide others and considers it her duty to pass on this skill to future generations. Her family's legacy as seers is important to her, and she will do whatever it takes to ensure that their skills are preserved.
+  - Name: Kaelus the Wanderer
+    - Race: Half-Orc
+    - Role/Class: Mysterious, Enchanter
+    - Personality trait: Charismatic and persuasive.
+    - Ideal: To explore the world and uncover its secrets.
+    - Bond: His family's legacy as wanderers is important to him.
+    - Flaw: Can be overly trusting of strangers who seek his aid.
+    - Voice tip: Low, gravelly voice with a hint of charisma.
+    - Backstory: Kaelus is a half-orc who has spent years traveling the world in search of knowledge and adventure. He takes great pride in using his skills to uncover hidden truths and considers it his duty to share what he learns with others. His family's legacy as wanderers is important to him, and he will do whatever it takes to ensure that their skills are preserved.
+  - Name: Tavros the Enchanter
+    - Race: Half-Elf
+    - Role/Class: Mysterious, Enchanter
+    - Personality trait: Insightful and intuitive.
+    - Ideal: To use his powers for good and protect those who cannot protect themselves.
+    - Bond: His family's legacy as enchanters is important to him.
+    - Flaw: Can be overly compassionate in dangerous situations.
+    - Voice tip: Soft, melodic voice with a gentle tone.
+    - Backstory: Tavros is a half-elf who has spent years studying the ancient arts of magic. He takes great pride in using his powers to help others and considers it his duty to pass on this skill to future generations. His family's legacy as enchanters is important to him, and he will do whatever it takes to ensure that their skills are preserved.
+  - Name: Ralos the Enchanter
+    - Race: Dwarf
+    - Role/Class: Mysterious, Enchanter
+    - Personality trait: Resilient and stoic.
+    - Ideal: To protect his home and family through magic.
+    - Bond: His family's legacy as enchanters is important to him.
+    - Flaw: Can be overly stubborn in the face of danger.
+    - Voice tip: Deep, resonant voice with a strong accent.
+    - Backstory: Ralos is a dwarf who has spent years honing his magical abilities. He takes great pride in using his powers to protect his home and family and considers it his duty to pass on this skill to future generations. His family's legacy as enchanters is important to him, and he will do whatever it takes to ensure that their skills are preserved.
+  - Name: Vaela the Seer
+    - Race: Elf
+    - Role/Class: Mysterious, Oracle
+    - Personality trait: Insightful and intuitive.
+    - Ideal: To guide others with her knowledge of the future.
+    - Bond: Her family's legacy as seers is important to her.
+    - Flaw: Can be overly trusting of those who seek her guidance.
+    - Voice tip: Soft, melodic voice with a gentle tone.
+    - Backstory: Vaela is an elf who has spent years studying the ancient arts of divination. She takes great pride in using her knowledge to guide others and considers it her duty to pass on this skill to future generations. Her family's legacy as seers is important to her, and she will do whatever it takes to ensure that their skills are preserved.

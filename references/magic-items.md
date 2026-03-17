@@ -1,0 +1,165 @@
+- **Common (10):**
+  - Name: Potion of Healing
+    - Type: Consumable
+    - Attunement: No
+    - Description: Restores 4d8 + 2 hit points to the drinker.
+  - Name: Spell Scroll (cantrip)
+    - Type: Tool
+    - Attunement: Yes
+    - Description: Allows the user to cast a cantrip from the scroll once per day.
+  - Name: Clockwork Amulet
+    - Type: Wondrous Item
+    - Attunement: No
+    - Description: Grants the wearer a +2 bonus to Dexterity (Stealth) checks and allows them to create clockwork constructs.
+  - Name: Ear Horn of Hearing
+    - Type: Wondrous Item
+    - Attunement: Yes
+    - Description: Provides the user with the ability to hear from any distance, even in a noisy environment.
+  - Name: +1 Weapon
+    - Type: Weapon
+    - Attunement: No
+    - Description: Grants the weapon a +1 bonus to attack and damage rolls.
+  - Name: +1 Shield
+    - Type: Shield
+    - Attunement: No
+    - Description: Increases AC by 2 when used with a shield.
+  - Name: Boots of Elvenkind
+    - Type: Wondrous Item
+    - Attunement: Yes
+    - Description: Grants the wearer the ability to move silently and jump higher.
+  - Name: Immovable Rod
+    - Type: Wondrous Item
+    - Attunement: No
+    - Description: Creates a permanent, unbreakable barrier that can be used to hold objects or creatures in place.
+  - Name: Bag of Holding
+    - Type: Wondrous Item
+    - Attunement: Yes
+    - Description: Provides an extradimensional space for storing items and allows the user to access it at any time.
+  - Name: Cloak of Protection
+    - Type: Wondrous Item
+    - Attunement: Yes
+    - Description: Grants the wearer a +3 bonus to AC and can be used as a shield in combat.
+- **Uncommon (10):**
+  - Name: +2 Weapon
+    - Type: Weapon
+    - Attunement: No
+    - Description: Grants the weapon a +2 bonus to attack and damage rolls.
+  - Name: Armor of Resistance
+    - Type: Armor
+    - Attunement: Yes
+    - Description: Provides a +3 bonus to AC in addition to the armor's normal bonuses.
+  - Name: Cloak of Displacement
+    - Type: Wondrous Item
+    - Attunement: Yes
+    - Description: Grants the wearer a +5 bonus to AC and can be used to make Disengage checks or escape from grapples.
+  - Name: Ring of Spell Storing
+    - Type: Magic Ring
+    - Attunement: Yes
+    - Description: Stores one spell known by the user, which can be cast at any time without expending a spell slot. The stored spell must be of a level that the ring's owner can cast.
+  - Name: Boots of Speed
+    - Type: Wondrous Item
+    - Attunement: Yes
+    - Description: Grants the wearer an increase in movement speed and the ability to move faster through difficult terrain.
+  - Name: Immovable Rod (Uncommon)
+    - Type: Wondrous Item
+    - Attunement: No
+    - Description: Creates a permanent, unbreakable barrier that can be used to hold objects or creatures in place. Uncommon version grants additional effects like creating a temporary wall.
+  - Name: Bag of Holding (Uncommon)
+    - Type: Wondrous Item
+    - Attunement: Yes
+    - Description: Provides an extradimensional space for storing items and allows the user to access it at any time. Uncommon version has increased capacity or additional features like a secret compartment.
+  - Name: Cloak of Protection (Uncommon)
+    - Type: Wondrous Item
+    - Attunement: Yes
+    - Description: Grants the wearer a +3 bonus to AC and can be used as a shield in combat. Uncommon version has an additional effect like granting resistance to certain types of damage.
+  - Name: Immovable Rod (Uncommon)
+    - Type: Wondrous Item
+    - Attunement: No
+    - Description: Creates a permanent, unbreakable barrier that can be used to hold objects or creatures in place. Uncommon version grants additional effects like creating a temporary wall.
+  - Name: Bag of Holding (Uncommon)
+    - Type: Wondrous Item
+    - Attunement: Yes
+    - Description: Provides an extradimensional space for storing items and allows the user to access it at any time. Uncommon version has increased capacity or additional features like a secret compartment.
+- **Rare (10):**
+  - Name: +2 Weapon
+    - Type: Weapon
+    - Attunement: No
+    - Description: Grants the weapon a +2 bonus to attack and damage rolls.
+  - Name: Armor of Resistance
+    - Type: Armor
+    - Attunement: Yes
+    - Description: Provides a +3 bonus to AC in addition to the armor's normal bonuses.
+  - Name: Cloak of Displacement
+    - Type: Wondrous Item
+    - Attunement: Yes
+    - Description: Grants the wearer a +5 bonus to AC and can be used to make Disengage checks or escape from grapples.
+  - Name: Ring of Spell Storing
+    - Type: Magic Ring
+    - Attunement: Yes
+    - Description: Stores one spell known by the user, which can be cast at any time without expending a spell slot. The stored spell must be of a level that the ring's owner can cast.
+  - Name: Boots of Speed
+    - Type: Wondrous Item
+    - Attunement: Yes
+    - Description: Grants the wearer an increase in movement speed and the ability to move faster through difficult terrain.
+  - Name: Immovable Rod (Rare)
+    - Type: Wondrous Item
+    - Attunement: No
+    - Description: Creates a permanent, unbreakable barrier that can be used to hold objects or creatures in place. Rare version grants additional effects like creating a temporary wall.
+  - Name: Bag of Holding (Rare)
+    - Type: Wondrous Item
+    - Attunement: Yes
+    - Description: Provides an extradimensional space for storing items and allows the user to access it at any time. Rare version has increased capacity or additional features like a secret compartment.
+  - Name: Cloak of Protection (Rare)
+    - Type: Wondrous Item
+    - Attunement: Yes
+    - Description: Grants the wearer a +3 bonus to AC and can be used as a shield in combat. Rare version has an additional effect like granting resistance to certain types of damage.
+  - Name: Immovable Rod (Rare)
+    - Type: Wondrous Item
+    - Attunement: No
+    - Description: Creates a permanent, unbreakable barrier that can be used to hold objects or creatures in place. Rare version grants additional effects like creating a temporary wall.
+  - Name: Bag of Holding (Rare)
+    - Type: Wondrous Item
+    - Attunement: Yes
+    - Description: Provides an extradimensional space for storing items and allows the user to access it at any time. Rare version has increased capacity or additional features like a secret compartment.
+- **Very Rare (5):**
+  - Name: +3 Weapon
+    - Type: Weapon
+    - Attunement: No
+    - Description: Grants the weapon a +3 bonus to attack and damage rolls.
+  - Name: Cloak of Invisibility
+    - Type: Wondrous Item
+    - Attunement: Yes
+    - Description: Grants the wearer total concealment, allowing them to move undetected in most situations.
+  - Name: Staff of Fire
+    - Type: Magic Weapon
+    - Attunement: No
+    - Description: Deals fire damage on each hit and can be used as a wand to cast spells like Flaming Sphere and Scorching Ray.
+  - Name: Ring of Regeneration
+    - Type: Magic Ring
+    - Attunement: Yes
+    - Description: Grants the wearer the ability to regenerate hit points over time, restoring 1d8+2 hit points per hour.
+  - Name: Deck of Many Things
+    - Type: Wondrous Item
+    - Attunement: No
+    - Description: A deck of cards that grant random effects when drawn. Each card has a unique and often dangerous effect, making it a risky but potentially rewarding item to use in combat or exploration.
+- **Legendary (5):**
+  - Name: Vorpal Sword
+    - Type: Weapon
+    - Attunement: Yes
+    - Description: Grants the wielder the ability to cleave through enemies with ease, dealing massive damage and often splitting opponents in two on a critical hit. A legendary weapon that can only be wielded by heroes of great renown.
+  - Name: Staff of Power
+    - Type: Magic Weapon
+    - Attunement: Yes
+    - Description: Provides the user with a +5 bonus to attack and damage rolls, as well as access to powerful spells like Fireball and Disintegrate. A legendary staff that grants immense magical power.
+  - Name: Holy Avenger
+    - Type: Weapon
+    - Attunement: Yes
+    - Description: Grants the wielder divine protection, allowing them to resist attacks from evil creatures and deal extra damage against undead foes. A legendary weapon blessed by a powerful deity.
+  - Name: Ring of Three Wishes
+    - Type: Magic Ring
+    - Attunement: Yes
+    - Description: Allows the wearer to make three wishes that can be used to grant any desire, limited only by the laws of magic and reality. A legendary ring that grants immense power and control over one's destiny.
+  - Name: Deck of Many Things (Legendary)
+    - Type: Wondrous Item
+    - Attunement: No
+    - Description: A deck of cards that grant random effects when drawn, with each card having a unique and often dangerous effect. The legendary version contains rarer and more powerful cards than the common version, making it even riskier but potentially far more rewarding.

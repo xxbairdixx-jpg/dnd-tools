@@ -1,0 +1,170 @@
+- **Name:** The Rusty Halberd
+  - **Location type:** Small town
+  - **Atmosphere:** Cozy and lively, with a mix of locals and travelers. Warm lighting and soft music in the background.
+  - **Signature drink:** Dark Ales (3 gp)
+  - **Notable patron:** Sir Cedric Ironfist, a retired soldier known for his tales of valor
+  - **Rumor/hook:** Recent rumors suggest that Sir Cedric has been seen arguing with a mysterious figure in the back room.
+  - **Menu:*
+    - **Ale (small mug)**
+      - Price: 1 cp
+    - **Beer (large mug)**
+      - Price: 2 cp
+    - **Wine (glass)**
+      - Price: 3 sp
+    - **Mead (small goblet)**
+      - Price: 5 sp
+    - **Stew (hearty meal with vegetables and meat)**
+      - Price: 10 sp
+- **Name:** The Blacksmith’s Forge
+  - **Location type:** Rural village
+  - **Atmosphere:** Rustic and industrial, with the smell of metal and smoke. A roaring fire keeps the place warm.
+  - **Signature drink:** Strong Ale (2 gp)
+  - **Notable patron:** Gruff Olaf, a blacksmith known for his skill and grumpiness
+  - **Rumor/hook:** The local children whisper that Gruff Olaf has a secret stash of gold hidden somewhere in the forge.
+  - **Menu:*
+    - **Ale (small mug)**
+      - Price: 1 cp
+    - **Beer (large mug)**
+      - Price: 2 cp
+    - **Wine (glass)**
+      - Price: 3 sp
+    - **Mead (small goblet)**
+      - Price: 5 sp
+    - **Stew (hearty meal with vegetables and meat)**
+      - Price: 10 sp
+- **Name:** The Moonlit Tavern
+  - **Location type:** Large city
+  - **Atmosphere:** Elegant and sophisticated, with soft lighting and a live band playing in the corner. A place where nobles and merchants mix.
+  - **Signature drink:** Fine Wine (4 gp)
+  - **Notable patron:** Lord Eldric Blackwood, a powerful noble known for his wealth
+  - **Rumor/hook:** It’s said that Lord Eldric has a secret past as a rogue, but no one knows the truth.
+  - **Menu:*
+    - **Ale (small mug)**
+      - Price: 1 cp
+    - **Beer (large mug)**
+      - Price: 2 cp
+    - **Wine (glass)**
+      - Price: 3 sp
+    - **Mead (small goblet)**
+      - Price: 5 sp
+    - **Stew (hearty meal with vegetables and meat)**
+      - Price: 10 sp
+- **Name:** The Traveler’s Rest
+  - **Location type:** Wilderness campsite
+  - **Atmosphere:** Simple and rugged, with a roaring fire and a few rough tables. A place where adventurers gather to share stories.
+  - **Signature drink:** Campfire Ale (2 cp)
+  - **Notable patron:** Captain Thorne Blackwood, a seasoned adventurer known for his bravery
+  - **Rumor/hook:** The captain has been seen arguing with an old rival over a map of uncharted territory.
+  - **Menu:*
+    - **Ale (small mug)**
+      - Price: 1 cp
+    - **Beer (large mug)**
+      - Price: 2 cp
+    - **Wine (glass)**
+      - Price: 3 sp
+    - **Mead (small goblet)**
+      - Price: 5 sp
+    - **Stew (hearty meal with vegetables and meat)**
+      - Price: 10 sp
+- **Name:** The Silver Swan
+  - **Location type:** Port town
+  - **Atmosphere:** Cosmopolitan and lively, with a mix of sailors and merchants. A place where stories of distant lands are told.
+  - **Signature drink:** Rum (3 gp)
+  - **Notable patron:** Captain Vex, a notorious pirate known for his cunning
+  - **Rumor/hook:** It’s said that Captain Vex has been seen arguing with the local sheriff over a map of hidden treasure.
+  - **Menu:*
+    - **Ale (small mug)**
+      - Price: 1 cp
+    - **Beer (large mug)**
+      - Price: 2 cp
+    - **Wine (glass)**
+      - Price: 3 sp
+    - **Mead (small goblet)**
+      - Price: 5 sp
+    - **Stew (hearty meal with vegetables and meat)**
+      - Price: 10 sp
+- **Name:** The Red Rose
+  - **Location type:** Small village
+  - **Atmosphere:** Quiet and serene, with a garden in the back that’s always in bloom. A place where locals come to relax.
+  - **Signature drink:** Rose Wine (2 gp)
+  - **Notable patron:** Lady Elara Silvermoon, a noblewoman known for her grace
+  - **Rumor/hook:** Lady Elara has been seen arguing with a mysterious figure in the back garden over a secret map.
+  - **Menu:*
+    - **Ale (small mug)**
+      - Price: 1 cp
+    - **Beer (large mug)**
+      - Price: 2 cp
+    - **Wine (glass)**
+      - Price: 3 sp
+    - **Mead (small goblet)**
+      - Price: 5 sp
+    - **Stew (hearty meal with vegetables and meat)**
+      - Price: 10 sp
+- **Name:** The Iron Fist
+  - **Location type:** Town square
+  - **Atmosphere:** Bustling and lively, with a central fountain and plenty of tables for patrons. A place where merchants and adventurers mingle.
+  - **Signature drink:** Strong Ale (2 gp)
+  - **Notable patron:** Thrain Ironfist, a dwarf known for his strength
+  - **Rumor/hook:** It’s said that Thrain has been seen arguing with an old rival over a map of hidden treasure.
+  - **Menu:*
+    - **Ale (small mug)**
+      - Price: 1 cp
+    - **Beer (large mug)**
+      - Price: 2 cp
+    - **Wine (glass)**
+      - Price: 3 sp
+    - **Mead (small goblet)**
+      - Price: 5 sp
+    - **Stew (hearty meal with vegetables and meat)**
+      - Price: 10 sp
+- **Name:** The Whispering Willow
+  - **Location type:** Forest glade
+  - **Atmosphere:** Mystical and enchanting, with a sense of magic in the air. A place where adventurers come to rest and listen to tales.
+  - **Signature drink:** Moonshine (2 cp)
+  - **Notable patron:** Zephyr the Enchanter, a mysterious figure known for his wisdom
+  - **Rumor/hook:** It’s said that Zephyr has been seen arguing with an old rival over a map of hidden treasure.
+  - **Menu:*
+    - **Ale (small mug)**
+      - Price: 1 cp
+    - **Beer (large mug)**
+      - Price: 2 cp
+    - **Wine (glass)**
+      - Price: 3 sp
+    - **Mead (small goblet)**
+      - Price: 5 sp
+    - **Stew (hearty meal with vegetables and meat)**
+      - Price: 10 sp
+- **Name:** The Golden Griffin
+  - **Location type:** City center
+  - **Atmosphere:** Luxurious and elegant, with a grand interior and a live orchestra playing. A place where nobles and merchants mix.
+  - **Signature drink:** Fine Wine (4 gp)
+  - **Notable patron:** Countess Valeria Bloodstone, a powerful noblewoman known for her cunning
+  - **Rumor/hook:** It’s said that Countess Valeria has been seen arguing with a mysterious figure in the back room over a map of hidden treasure.
+  - **Menu:*
+    - **Ale (small mug)**
+      - Price: 1 cp
+    - **Beer (large mug)**
+      - Price: 2 cp
+    - **Wine (glass)**
+      - Price: 3 sp
+    - **Mead (small goblet)**
+      - Price: 5 sp
+    - **Stew (hearty meal with vegetables and meat)**
+      - Price: 10 sp
+- **Name:** The Black Cat
+  - **Location type:** Small town
+  - **Atmosphere:** Cozy and mysterious, with a sense of magic in the air. A place where adventurers come to rest and listen to tales.
+  - **Signature drink:** Dark Ales (3 gp)
+  - **Notable patron:** Thorne the Cutpurse, a notorious thief known for his cunning
+  - **Rumor/hook:** It’s said that Thorne has been seen arguing with an old rival over a map of hidden treasure.
+  - **Menu:*
+    - **Ale (small mug)**
+      - Price: 1 cp
+    - **Beer (large mug)**
+      - Price: 2 cp
+    - **Wine (glass)**
+      - Price: 3 sp
+    - **Mead (small goblet)**
+      - Price: 5 sp
+    - **Stew (hearty meal with vegetables and meat)**
+      - Price: 10 sp

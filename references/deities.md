@@ -1,0 +1,251 @@
+# D&D 5e Deities Reference
+
+## Greater Deities (20+)
+- **Bahamut** (LG, War/Metallic Dragons)
+  - Title: The White Dragon
+  - Symbol: A white dragon
+  - Holy Days/Festivals: Dawn of Bahamut
+  - Dogma: Stand against the chaos of evil and protect the innocent.
+  - Followers typical races: Human, Half-Elf
+- **Tiamat** (LE, Chromatic Dragons)
+  - Title: Mother of the Monsters
+  - Symbol: A chromatic dragon's head
+  - Holy Days/Festivals: The Great Conjunction
+  - Dogma: Unite the chromatic dragons and spread chaos.
+  - Followers typical races: Dragonborn, Human
+- **Moradin** (LG, Knowledge/Forge)
+  - Title: The Artisan
+  - Symbol: A hammer and anvil
+  - Holy Days/Festivals: Day of the Forge
+  - Dogma: Honor the craft and preserve the knowledge of creation.
+  - Followers typical races: Dwarf, Half-Orc
+- **Corellon Larethian** (CG, Arcana/Life)
+  - Title: The Silver Flame
+  - Symbol: A silver flame
+  - Holy Days/Festivals: Midsummer Festival
+  - Dogma: Embrace the magic of nature and protect the innocent.
+  - Followers typical races: Elf, Half-Elf
+- **Garl Glittergold** (LG, Trickery)
+  - Title: The Merchant King
+  - Symbol: A golden coin with a star
+  - Holy Days/Festivals: Festival of Good Fortune
+  - Dogma: Celebrate the joy and prosperity brought by the gods.
+  - Followers typical races: Gnome, Halfling
+- **Gruumsh** (CE, Tempest/War)
+  - Title: The Stormfather
+  - Symbol: A storm cloud
+  - Holy Days/Festivals: Festival of the Storms
+  - Dogma: Embrace the fury and unpredictability of nature.
+  - Followers typical races: Orc, Half-Orc
+- **Lolth** (CE, Trickery)
+  - Title: The Spider Queen
+  - Symbol: A spider's web with a spider's eye
+  - Holy Days/Festivals: Feast of the Black Rose
+  - Dogma: Cultivate cunning and deceit to dominate others.
+  - Followers typical races: Drow, Half-Elf
+- **Pelor** (NG, Life/Light)
+  - Title: The Radiant One
+  - Symbol: A sunburst
+  - Holy Days/Festivals: Festival of the Sun
+  - Dogma: Spread light and life wherever you go.
+  - Followers typical races: Human, Half-Orc
+- **Vecna** (NE, Knowledge/Death)
+  - Title: The Nameless One
+  - Symbol: A skull with a single eye
+  - Holy Days/Festivals: Day of the Moon
+  - Dogma: Seek knowledge and power through any means.
+  - Followers typical races: Half-Orc, Human
+- **Asmodeus** (LE, Trickery/Fire)
+  - Title: The Lord of Lies
+  - Symbol: A flaming key
+  - Holy Days/Festivals: Festival of the Burning Key
+  - Dogma: Deceive and manipulate others for your own gain.
+  - Followers typical races: Human, Tiefling
+- **Odin** (NG, Knowledge/War)
+  - Title: The All-Father
+  - Symbol: A spear with a wolf
+  - Holy Days/Festivals: Festival of the Thunder God
+  - Dogma: Seek knowledge and victory in battle.
+  - Followers typical races: Human, Half-Orc
+- **Zeus** (NG, Tempest/Sky)
+  - Title: The Skyfather
+  - Symbol: A thunderbolt
+  - Holy Days/Festivals: Festival of the Storms
+  - Dogma: Command the skies and control the elements.
+  - Followers typical races: Human, Half-Orc
+- **Hera** (CN, Trickery/Marriage)
+  - Title: The Queen of Marriage
+  - Symbol: A golden apple
+  - Holy Days/Festivals: Festival of Love
+  - Dogma: Marry and procreate to spread your influence.
+  - Followers typical races: Human, Half-Orc
+- **Thor** (CG, Tempest/Strength)
+  - Title: The Thunderer
+  - Symbol: A hammer
+  - Holy Days/Festivals: Festival of the Storms
+  - Dogma: Defend and protect your loved ones.
+  - Followers typical races: Human, Half-Orc
+- **Loki** (CE, Trickery/Knowledge)
+  - Title: The God of Mischief
+  - Symbol: A trickster's hat
+  - Holy Days/Festivals: Festival of the Trickster
+  - Dogma: Use your wit and cunning to outsmart others.
+  - Followers typical races: Human, Half-Orc
+- **Set** (LE, Death/Darkness)
+  - Title: The Serpent
+  - Symbol: A black cobra
+  - Holy Days/Festivals: Festival of the Black Cobra
+  - Dogma: Embrace death and darkness to gain power.
+  - Followers typical races: Human, Half-Orc
+- **Isis** (NG, Magic/Life)
+  - Title: The Mother Goddess
+  - Symbol: A lotus flower with a sunburst
+  - Holy Days/Festivals: Festival of the Sun
+  - Dogma: Use magic and life to heal and protect.
+  - Followers typical races: Human, Half-Orc
+- **Ra** (LG, Life/Light)
+  - Title: The Sun God
+  - Symbol: A sun disk with rays
+  - Holy Days/Festivals: Festival of the Sun
+  - Dogma: Spread light and life wherever you go.
+  - Followers typical races: Human, Half-Orc
+- **Anubis** (LN, Death/Grave)
+  - Title: The Jackal-headed God
+  - Symbol: A jackal head
+  - Holy Days/Festivals: Festival of the Dead
+  - Dogma: Protect the dead and guide them to the afterlife.
+  - Followers typical races: Human, Half-Orc
+- **Osiris** (LG, Life/Death)
+  - Title: The Resurrection God
+  - Symbol: A crook and flail
+  - Holy Days/Festivals: Festival of the Dead
+  - Dogma: Ensure the dead are properly honored.
+  - Followers typical races: Human, Half-Orc
+
+## Lesser Deities (15+)
+- **Helm** (LN, Life/Light)
+  - Title: The Watcher
+  - Symbol: A helm with a visor
+  - Holy Days/Festivals: Festival of the Helm
+  - Dogma: Protect and defend your allies.
+  - Followers typical races: Human, Half-Orc
+- **Ilmater** (LG, Life/Grave)
+  - Title: The Merciful One
+  - Symbol: A bleeding heart
+  - Holy Days/Festivals: Festival of Mercy
+  - Dogma: Heal and protect the wounded.
+  - Followers typical races: Human, Half-Orc
+- **Lathander** (NG, Life/Light)
+  - Title: The Morninglord
+  - Symbol: A sunburst with a crown
+  - Holy Days/Festivals: Festival of Dawn
+  - Dogma: Spread light and hope.
+  - Followers typical races: Human, Half-Orc
+- **Mask** (CN, Trickery)
+  - Title: The Faceless One
+  - Symbol: A mask with a single eye
+  - Holy Days/Festivals: Festival of the Mask
+  - Dogma: Embrace anonymity and deception.
+  - Followers typical races: Human, Half-Orc
+- **Mystra** (NG, Knowledge/Arcana)
+  - Title: The Weave
+  - Symbol: A weft with a loom
+  - Holy Days/Festivals: Festival of the Weave
+  - Dogma: Use magic and knowledge to weave your destiny.
+  - Followers typical races: Human, Half-Orc
+- **Oghma** (N, Knowledge)
+  - Title: The Scholar
+  - Symbol: A quill pen with a book
+  - Holy Days/Festivals: Festival of the Book
+  - Dogma: Seek knowledge and share it.
+  - Followers typical races: Human, Half-Orc
+- **Selûne** (CG, Knowledge/Life)
+  - Title: The Silver Moon
+  - Symbol: A silver moon with a crown
+  - Holy Days/Festivals: Festival of the Moon
+  - Dogma: Use knowledge and life to heal and protect.
+  - Followers typical races: Human, Half-Orc
+- **Shar** (NE, Death/Trickery)
+  - Title: The Dark Lady
+  - Symbol: A crescent moon with a dagger
+  - Holy Days/Festivals: Festival of the Dagger
+  - Dogma: Embrace death and use trickery to gain power.
+  - Followers typical races: Human, Half-Orc
+- **Silvanus** (N, Nature)
+  - Title: The Green Father
+  - Symbol: A tree with a stag's head
+  - Holy Days/Festivals: Festival of the Forest
+  - Dogma: Protect and nurture nature.
+  - Followers typical races: Human, Half-Orc
+- **Sune** (CG, Life/Light)
+  - Title: The Radiant One
+  - Symbol: A sunburst with a crown
+  - Holy Days/Festivals: Festival of the Sun
+  - Dogma: Spread light and life wherever you go.
+  - Followers typical races: Human, Half-Orc
+- **Talos** (CE, Tempest)
+  - Title: The Bronze Giant
+  - Symbol: A bronze giant's hand
+  - Holy Days/Festivals: Festival of the Storms
+  - Dogma: Command the elements and defend your allies.
+  - Followers typical races: Human, Half-Orc
+- **Tempus** (N, War)
+  - Title: The Timeless One
+  - Symbol: A clock with a sword
+  - Holy Days/Festivals: Festival of the Sword
+  - Dogma: Honor time and destiny.
+  - Followers typical races: Human, Half-Orc
+- **Tyr** (LG, War/Justice)
+  - Title: The Just God
+  - Symbol: A sword with a shield
+  - Holy Days/Festivals: Festival of the Sword
+  - Dogma: Defend and uphold justice.
+  - Followers typical races: Human, Half-Orc
+- **Umberlee** (CE, Tempest)
+  - Title: The Storm Mother
+  - Symbol: A storm cloud with a wave
+  - Holy Days/Festivals: Festival of the Storms
+  - Dogma: Command the elements and protect your allies.
+  - Followers typical races: Human, Half-Orc
+- **Waukeen** (N, Knowledge/Trickery)
+  - Title: The Lady of Lights
+  - Symbol: A lantern with a key
+  - Holy Days/Festivals: Festival of the Lantern
+  - Dogma: Use knowledge and trickery to gain power.
+  - Followers typical races: Human, Half-Orc
+
+## Cleric Domain Descriptions
+- **Life**
+  - Focus on healing and nurturing life.
+- **Light**
+  - Focus on spreading light and hope.
+- **War**
+  - Focus on defending and protecting allies.
+- **Knowledge**
+  - Focus on gaining and sharing knowledge.
+- **Nature**
+  - Focus on protecting and nurturing nature.
+- **Tempest**
+  - Focus on commanding the elements.
+- **Trickery**
+  - Focus on using deception and manipulation for gain.
+- **Death**
+  - Focus on accepting death and gaining power through it.
+- **Grave**
+  - Focus on honoring the dead and guiding them to the afterlife.
+- **Forge**
+  - Focus on creating and preserving knowledge.
+- **Arcana**
+  - Focus on using magic and knowledge to weave destiny.
+
+## Paladin Oath Summaries
+- **Devotion**
+  - Swear loyalty to a deity and fight for their cause with unwavering dedication.
+- **Ancients**
+  - Honor the ancient ways and protect the old magics from those who would corrupt them.
+- **Vengeance**
+  - Seek retribution against those who have wronged your people or allies.
+- **Conquest**
+  - Use force to expand your realm and bring order to chaos.
+- **Redemption**
+  - Offer forgiveness and second chances to those who seek atonement for their sins.

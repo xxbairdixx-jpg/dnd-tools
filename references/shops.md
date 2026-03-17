@@ -1,0 +1,85 @@
+- **General Store:**
+  - Rope (20 ft. length, 1 lb.)
+    - Price: 5 cp
+  - Torch (single-use)
+    - Price: 10 cp
+  - Rations (day's supply of food for one person)
+    - Price: 5 sp
+  - Bedroll (makes sleeping in the wilderness more comfortable)
+    - Price: 2 gp
+  - Flint and Steel (used to start fires)
+    - Price: 10 cp
+  - Tinderbox (contains flammable material for starting fires)
+    - Price: 5 sp
+  - Lantern, bullseye (makes light in dark areas; requires a wick and oil)
+    - Price: 2 gp
+  - Tent (provides shelter when camping)
+    - Price: 10 gp
+  - Water skin (holds up to 3 gallons of water)
+    - Price: 5 sp
+  - Meal, prepared (a single meal that can be eaten by one person; includes meat and vegetables)
+    - Price: 2 cp
+- **Blacksmith:**
+  - Longsword (+1)
+    - Price: 30 gp
+  - Mace (+1)
+    - Price: 25 gp
+  - Warhammer (+1)
+    - Price: 25 gp
+  - Morningstar (uncommon)
+    - Price: 45 gp
+  - Battleaxe (+1) (rare)
+    - Price: 70 gp
+  - Scimitar (+1) (uncommon)
+    - Price: 35 gp
+- **Armorer:**
+  - Breastplate (level 2)
+    - Price: 60 gp
+  - Half-Plate (level 2)
+    - Price: 80 gp
+  - Full Plate (level 4)
+    - Price: 150 gp
+  - Chainmail (level 1)
+    - Price: 30 gp
+  - Splint Mail (level 3)
+    - Price: 90 gp
+- **Alchemist:**
+  - Potion of Healing (restores 4d8 + 2 hit points to the drinker; requires attunement)
+    - Price: 150 gp
+  - Antidote
+    - Price: 250 gp
+  - Fireball (spell scroll, can be cast once per day from the scroll)
+    - Price: 300 gp
+- **Magic Shop:**
+  - Potion of Healing (restores 4d8 + 2 hit points to the drinker; requires attunement)
+    - Price: 150 gp
+  - Wand of Magic Missiles (can be used to cast magic missile up to three times per day)
+    - Price: 300 gp
+  - Ring of Spell Storing (stores one spell known by the user, which can be cast at any time without expending a spell slot. The stored spell must be of a level that the ring's owner can cast.)
+    - Price: 500 gp
+- **Tavern Menu:**
+  - Ale (small mug)
+    - Price: 1 cp
+  - Beer (large mug)
+    - Price: 2 cp
+  - Wine (glass)
+    - Price: 3 sp
+  - Mead (small goblet)
+    - Price: 5 sp
+  - Stew (hearty meal with vegetables and meat)
+    - Price: 10 sp
+- **Inn:**
+  - Room, common
+    - Price: 5 sp per night
+  - Room, comfortable
+    - Price: 2 gp per night
+  - Room, wealthy
+    - Price: 8 gp per night
+- **Stables:**
+  - Horse (75 gp)
+    - Description: A sturdy and reliable mount suitable for long journeys.
+  - Pony (30 gp)
+    - Description: Smaller but still capable of carrying a rider and light cargo, ideal for shorter distances or children.
+  - Hay and grain
+    - Price: 1 cp per day
+    - Description: Food for the horse or pony to keep them well-fed during travel.
