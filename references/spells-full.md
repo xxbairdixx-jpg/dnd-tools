@@ -1,146 +1,229 @@
-D&D 5e Spell Reference - Comprehensive List
+# D&D 5e Player's Handbook — Complete Spell List
 
-Cantrips (15):
-Fire Bolt: Level 0, Evocation, 1 Action, 120 feet, Instantaneous, V, S. Ranged fire spell dealing 1d10 fire damage.
-Eldritch Blast: Level 0, Evocation, 1 Action, 120 feet, Instantaneous, V, S. Firing spells that deal 2d8 force damage per target.
-Mage Hand: Level 0, Transmutation, 1 Action, Self (3-foot radius), Instantaneous, S. Creates a 3-foot radius invisible hand to manipulate objects.
-Prestidigitation: Level 0, Transmutation, 1 Action, Self, Instantaneous, V. Minor illusionary effects like creating food or cleaning surfaces.
-Minor Illusion: Level 0, Illusion, 1 Action, Self (5-foot radius), Instantaneous, S. Creates a minor illusion of an object or creature.
-Guidance: Level 0, Divination, 1 Action, Touch, Concentration up to 1 minute, V, S. Grants advantage on attack rolls against creatures you can see.
-Sacred Flame: Level 0, Evocation, 1 Action, Self (5-foot radius), Instantaneous or 1 hour, V, S. Creates a flame of your choice within a 5-foot radius.
-Toll the Dead: Level 0, Necromancy, 1 Action, Self (5-foot radius), Instantaneous, V, S. A quick burial spell that doesn't require concentration.
-Vicious Mockery: Level 0, Illusion, 1 Action, 60 feet, Instantaneous, V. Causes the target to roll a d20 and suffer disadvantage on attack rolls if they fail.
-Poison Spray: Level 0, Necromancy, 1 Action, 30 feet, Instantaneous, V, S. A quick poison spray that deals 1d4 poison damage.
-Ray of Frost: Level 0, Evocation, 1 Action, Self (5-foot radius), Instantaneous or 1 hour, V, S. Creates a 5-foot radius area of cold damage.
-Shocking Grasp: Level 0, Illusion, 1 Action, 60 feet, Instantaneous, V. Creates a fake electrical sensation causing the target to roll a d20 and suffer disadvantage on attack rolls if they fail.
-Acid Splash: Level 0, Necromancy, 1 Action, Self (5-foot radius), Instantaneous or 1 hour, V, S. Creates a cloud of acid that deals 1d4 acid damage per round.
-Chill Touch: Level 0, Necromancy, 1 Action, Self (5-foot radius), Instantaneous, V, S. A quick cold touch that deals 1d4 cold damage.
-Produce Flame: Level 0, Transmutation, 1 Action, Self (3-foot radius), Instantaneous or 1 hour, V, S. Creates a flame of your choice within a 3-foot radius.
+*Extracted from PDF — 225 spells*
 
-1st Level (20):
-Magic Missile: Level 1, Evocation, 1 Action, Self, 30 feet, Ranged spell attack, V, M. Fires up to three missiles that each deal 1d10 force damage.
-Shield: Level 1, Abjuration, 1 Action, Self, 30 feet, Instantaneous, V, S. Grants resistance to nonmagical bludgeoning, piercing, and slashing damage for 1 minute.
-Cure Wounds: Level 1, Healing, 1 Action, Touch, Concentration up to 1 minute, V, S. Restores hit points equal to the spellcasting ability modifier plus the target's level.
-Healing Word: Level 1, Healing, 1 Action, Self or creature within 60 feet, Instantaneous, V, M. Restores hit points equal to the spellcaster's spell attack bonus.
-Thunderwave: Level 1, Transmutation, 1 Action, Self (5-foot radius), Instantaneous, V, S. Creates a wave of thunder that deals 2d6 thunder damage and grants advantage on Dex saves against being knocked prone.
-Burning Hands: Level 1, Evocation, 1 Action, Self (10-foot cone), Instantaneous, V, S. Fires hands of flame dealing 1d4 fire damage per round for 3 rounds.
-Chromatic Orb: Level 1, Transmutation, 1 Action, Self (5-foot radius), Instantaneous or 1 hour, V, S. Creates a sphere of your choice that deals radiant damage to creatures within it each turn for up to 8 rounds.
-Detect Magic: Level 1, Enchantment, 1 Action, Self (30 feet), Instantaneous, V, M. Detects magical effects and spells targeting you or others.
-Identify: Level 1, Transmutation, 1 Action, Touch, Concentration up to 1 minute, V, S. Reveals the true nature of an object within 60 feet.
-Sleep: Level 1, Enchantment, 1 Action, Self (20-foot radius), Instantaneous or 8 hours, V, M. Causes a creature to fall asleep for 1 hour.
-
-Faerie Fire: Level 1, Illusion, 1 Action, Self (30-foot radius), Instantaneous, S. Creates an invisible magical reflection of objects and creatures within a 30-foot radius.
-Fog Cloud: Level 1, Transmutation, 1 Action, Self (60-foot radius), Instantaneous or 8 hours, V, M. Creates a thick cloud of fog that provides advantage on Stealth checks.
-
-Grease: Level 1, Illusion, 1 Action, Self (5-foot radius), Instantaneous, S. Causes the target to roll a d20 and suffer disadvantage on attack rolls if they fail.
-Hideous Laughter: Level 1, Enchantment, 1 Action, Self (30-foot radius), Instantaneous, V. Causes creatures within range to have disadvantage on attack rolls.
-
-Mage Armor: Level 1, Abjuration, 1 Action, Self, 60-foot radius, Instantaneous or up to 1 hour, V, S. Grants resistance to nonmagical bludgeoning, piercing, and slashing damage for 1 minute.
-
-Protection from Evil and Good: Level 1, Divination, 1 Action, Self (30-foot radius), Instantaneous or 8 hours, V, M. Grants advantage on saving throws against evil and good influences.
-
-Witch Bolt: Level 1, Necromancy, 1 Action, Self (5-foot radius), Instantaneous, V, S. Fires a bolt of necrotic energy dealing 2d6 necrotic damage to creatures in the area.
-
-Guiding Bolt: Level 1, Evocation, 1 Action, Self (30 feet), Instantaneous, V, S. A single bolt of lightning that deals 1d8 force damage and can be used as a ranged spell attack.
-
-2nd Level (15):
-Hold Person: Level 2, Enchantment, 1 Action, Self or creature within 60 feet, Instantaneous or 3 rounds, V, M. Causes the target to fall prone and cannot move until the spell ends.
-Scorching Ray: Level 2, Evocation, 1 Action, Self (5-foot radius), Instantaneous or 8 hours, V, S. Fires a cone of fire dealing 4d6 fire damage per round for up to 3 rounds.
-
-Invisibility: Level 2, Transmutation, 1 Action, Self, 60 feet, Instantaneous, V, M. The target becomes invisible until it takes damage or casts a spell.
-
-Misty Step: Level 2, Transmutation, 1 Action, Self (self), Instantaneous. Teleports the creature up to 30 feet to an unoccupied space you can see.
-
-Mirror Image: Level 2, Illusion, 1 Action, Self (5-foot radius), Instantaneous or 8 hours, V, M. Creates a duplicate of yourself within a 5-foot radius that acts independently for 1 round.
-
-Web: Level 2, Enchantment, 1 Action, Self (30-foot radius), Instantaneous or 8 hours, V, M. Creates a web in the air that restrains creatures caught in it.
-
-Shatter: Level 2, Illusion, 1 Action, Self (5-foot radius), Instantaneous or 8 hours, V, S. Creates an illusion of shattering glass within a 5-foot radius.
-
-Darkness: Level 2, Transmutation, 1 Action, Self (60-foot radius), Instantaneous or up to 1 hour, V, M. A 60-foot radius sphere of magical darkness that provides the darkvision of dim light.
-
-Detect Thoughts: Level 2, Enchantment, 1 Action, Self (30-foot radius), Instantaneous or 8 hours, V, M. Reveals the thoughts of a creature within range that has been asleep for at least 1 hour.
-
-Enlarge/Reduce: Level 2, Transmutation, 1 Action, Self (5-foot radius), Instantaneous or up to 1 hour, V, S. The target grows larger than normal or shrinks smaller until the spell ends.
-
-Flaming Sphere: Level 2, Evocation, 1 Action, Self (self), Instantaneous or up to 8 rounds, V, S. Creates a sphere of fire that deals 3d6 fire damage per round.
-
-Gentle Repose: Level 2, Transmutation, 1 Action, Self (5-foot radius), Instantaneous or up to 8 hours, V, M. Causes the target's body to temporarily stop moving for 1 hour.
-
-Heat Metal: Level 2, Abjuration, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 rounds, V, S. Causes metal objects to burn with intense heat.
-
-Levitate: Level 2, Transmutation, 1 Action, Self (3-foot radius), Instantaneous or up to 1 hour, V, M. The target hovers above the ground for 1 minute.
-
-Suggestion: Level 2, Enchantment, 1 Action, Self (60-foot radius), Instantaneous, V. Causes a creature's thoughts and actions to be influenced by your suggestion.
-
-3rd Level (15):
-Fireball: Level 3, Evocation, 1 Action, Self (self) or creature within 120 feet, Instantaneous or up to 8 rounds, V, S. Deals 4d6 fire damage per round for up to 8 rounds.
-Lightning Bolt: Level 3, Evocation, 1 Action, Self (5-foot radius), Instantaneous or 8 hours, V, S. A bolt of lightning that deals 2d10 force damage.
-
-Counterspell: Level 3, Abjuration, 1 Action, Self or creature within 60 feet, Instantaneous, V, M. Refocuses a spell you cast against the caster.
-
-Dispel Magic: Level 3, Transmutation, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 rounds, V, S. Removes all magical effects targeting you or others for up to 8 rounds.
-
-Fly: Level 3, Transmutation, 1 Action, Self (self), Instantaneous. Teleports the creature up to 60 feet in any direction.
-
-Haste: Level 3, Evocation, 1 Action, Self (5-foot radius), Instantaneous or up to 8 rounds, V, S. Increases the target's speed and spell attack bonus by a factor of two for 1 minute.
-
-Hypnotic Pattern: Level 3, Enchantment, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 hours, V, M. Causes creatures to be hypnotized in a pattern that affects their actions.
-
-Slow: Level 3, Transmutation, 1 Action, Self (5-foot radius), Instantaneous or up to 8 rounds, V, S. Causes the target's speed to halve and they must succeed on a DC 12 Constitution save each turn to maintain balance.
-
-Animate Dead: Level 3, Necromancy, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 rounds, V, M. Causes the target's body to become animated for 1 minute.
-
-Bestow Curse: Level 3, Evocation, 1 Action, Self (5-foot radius), Instantaneous or up to 8 rounds, V, S. Grants a curse that causes damage per round.
-
-Clairvoyance: Level 3, Transmutation, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 hours, V, M. Allows you to see into the future for 5 minutes.
-
-Fear: Level 3, Enchantment, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 rounds, V, S. Causes a creature to have disadvantage on saving throws against fear effects.
-
-Gaseous Form: Level 3, Transmutation, 1 Action, Self (5-foot radius), Instantaneous or up to 8 hours, V, M. The target becomes intangible for 1 minute.
-
-Leomund's Tiny Hut: Level 3, Transmutation, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 rounds, V, S. Creates a temporary shelter of 5x5 ft that provides safe haven.
-
-Spirit Guardians: Level 3, Enchantment, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 hours, V, M. Creates spectral guardians that protect you for 1 minute.
-
-4th Level (10):
-Polymorph: Level 4, Transmutation, 1 Action, Self (5-foot radius), Instantaneous or up to 8 rounds, V, S. Changes the target into an animal of your choice.
-
-Banishment: Level 4, Abjuration, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 rounds, V, M. Sends a target out of existence for 1 minute.
-
-Greater Invisibility: Level 4, Transmutation, 1 Action, Self (5-foot radius), Instantaneous or up to 8 hours, V, M. The target becomes invisible until it takes damage.
-
-Wall of Fire: Level 4, Evocation, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 rounds, V, S. Creates a 20-foot radius wall of fire that deals 3d6 fire damage per round.
-
-Blight: Level 4, Transmutation, 1 Action, Self (5-foot radius), Instantaneous or up to 8 rounds, V, M. Causes the target's body to deteriorate and decay for 1 minute.
-
-Confusion: Level 4, Enchantment, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 hours, V, S. Causes creatures to act in a confused state until they succeed on a DC 12 Wisdom save.
-
-Dimension Door: Level 4, Transmutation, 1 Action, Self (self), Instantaneous or up to 8 rounds, V, M. Teleports you and up to four willing creatures within 30 feet to an unoccupied space up to 60 feet away.
-
-Evard's Black Tentacles: Level 4, Enchantment, 1 Action, Self (5-foot radius), Instantaneous or up to 8 rounds, V, M. Creates a web of tentacles that restrain the target for 1 minute.
-
-Fabricate: Level 4, Transmutation, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 hours, V, S. Creates a temporary object from materials you have access to.
-
-Otiluke's Resilient Sphere: Level 4, Enchantment, 1 Action, Self (5-foot radius), Instantaneous or up to 8 rounds, V, M. Creates a sphere of resilience that grants advantage on saving throws for 1 minute.
-
-5th Level (10):
-Cone of Cold: Level 5, Transmutation, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 hours, V, S. Causes a cone of cold damage per round.
-
-Mass Cure Wounds: Level 5, Healing, 1 Action, Touch, Concentration up to 1 minute, V, S. Restores hit points equal to the spellcaster's spell attack bonus plus the target's level.
-
-Raise Dead: Level 5, Necromancy, 1 Action, Self or creature within 60 feet, Instantaneous or up to 8 hours, V, M. Restores a dead creature's body and HP for 1 minute.
-
-Cloudkill: Level 5, Evocation, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 rounds, V, S. A cloud of poisonous gas that deals 2d6 poison damage per round.
-
-Conjure Elemental: Level 5, Transmutation, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 hours, V, M. Creates a temporary elemental that can be used as a weapon.
-
-Dominate Person: Level 5, Enchantment, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 hours, V, S. Forces the target's actions for 24 hours.
-
-Hold Monster: Level 5, Enchantment, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 hours, V, M. Prevents the target from casting spells or using magical items.
-
-Legend Lore: Level 5, Transmutation, 1 Action, Self (self), Instantaneous or up to 8 rounds, V, S. Grants knowledge of legendary stories for 1 minute.
-
-Mislead: Level 5, Enchantment, 1 Action, Self (self) or creature within 60 feet, Instantaneous or up to 8 hours, V, M. Causes the target's actions to be misled for 24 hours.
-
-Scrying: Level 5, Transmutation, 1 Action, Self (self), Instantaneous or up to 8 rounds, V, S. Allows you to see into the future for 1 minute.
+- **BARKSKIN** — Level 2 transmutation
+- **BEAST SENSE** — Level 2 divination
+- **REPOSE** — Level 2 necromallcy
+- **AURA OF VITALITY** — Level 3 evocation
+- **Abjuration cantrip** — Level 3 conjuration
+- **BEACON OF HOPE** — Level 3 abjuration
+- **FEAR** — Level 3 iiiusion
+- **GLYPH OF WARDING** — Level 3 abjuration
+- **HUNGER OF HADAR** — Level 3 conjuration
+- **PATTERN** — Level 3 iiiusion
+- **BANISHMENT** — Level 4 abjuration
+- **INSECT** — Level 4 transmutatioll
+- **GLOBE OF INVULNERABILITY** — Level 6 abjuration
+- **I st-/eveJ iIIusion** — Level 6 ar
+- **5th-leveI evocation** — Level 7 or
+- **GLIBNESS** — Level 8 transmutation
+- **, iIIusion** — Level ? ?
+- **/st-/evel enchantment** — Level ? ?
+- **1st-/evel evocation** — Level ? ?
+- **1st-/evel iJlusion** — Level ? ?
+- **1st-IeveI divination** — Level ? ?
+- **1st-ievei evocation** — Level ? ?
+- **1st-leveI abjuration** — Level ? ?
+- **1st-leveI conjuration** — Level ? ?
+- **1st-leveI conjuration (ritual)** — Level ? ?
+- **1st-leveI divination** — Level ? ?
+- **1st-leveI enchantment** — Level ? ?
+- **1st-leveI transmutatian** — Level ? ?
+- **1st-levei conjuratian (ritual)** — Level ? ?
+- **1st-levei divination (ritual)** — Level ? ?
+- **1st-levei evocation** — Level ? ?
+- **1st-levei iIIusion (ritual)** — Level ? ?
+- **1st-levei necromancy** — Level ? ?
+- **1st-levei transmutation** — Level ? ?
+- **1st-levei transmutation (ritual)** — Level ? ?
+- **1st.leveI evocation** — Level ? ?
+- **2nd-ievei enchantment** — Level ? ?
+- **2nd-leveI abjuration** — Level ? ?
+- **2nd-leveI divinatian** — Level ? ?
+- **2nd-leveI divinatian (ritual)** — Level ? ?
+- **2nd-leveI divination** — Level ? ?
+- **2nd-leveI enchantment** — Level ? ?
+- **2nd-leveI evoeation** — Level ? ?
+- **2nd-leveI iIlusion (ritl1al)** — Level ? ?
+- **2nd-leveI ilIusion** — Level ? ?
+- **2nd-leveI illusion** — Level ? ?
+- **2nd-leveI transmutation** — Level ? ?
+- **2nd-levei conjuration** — Level ? ?
+- **2nd-levei divination (ritual)** — Level ? ?
+- **2nd-levei eonjuration** — Level ? ?
+- **2nd-levei evacatian** — Level ? ?
+- **2nd-levei evocation** — Level ? ?
+- **2nd-levei i11usion** — Level ? ?
+- **2nd./eveI divination** — Level ? ?
+- **2nd./evel evocation** — Level ? ?
+- **2nd./evel evoeation** — Level ? ?
+- **2nd./evel iI1usion (ritual)** — Level ? ?
+- **2nd./evel illusion** — Level ? ?
+- **2nd./evel transmutation** — Level ? ?
+- **3rd-/evel abjuration** — Level ? ?
+- **3rd-/evel conjuratiaIl** — Level ? ?
+- **3rd-/evel conjuration** — Level ? ?
+- **3rd-/evel divination** — Level ? ?
+- **3rd-/evel eonjuratioll** — Level ? ?
+- **3rd-/evel evocation** — Level ? ?
+- **3rd-/evel evoeation** — Level ? ?
+- **3rd-/evel iIIusion (ritual)** — Level ? ?
+- **3rd-/evel nccromancy** — Level ? ?
+- **3rd-/evel transmutation** — Level ? ?
+- **3rd-/evel transmutation (ritual)** — Level ? ?
+- **3rd-IeveI conjuration** — Level ? ?
+- **3rd-IeveI transmutation** — Level ? ?
+- **3rd-Ievel abjuratian** — Level ? ?
+- **3rd-Ievel abjuration** — Level ? ?
+- **3rd-Ievel conjuration** — Level ? ?
+- **3rd-Ievel evocation** — Level ? ?
+- **3rd-Ievel illusion** — Level ? ?
+- **3rd-Ievel necromancy** — Level ? ?
+- **3rd-Ievel necromancy (ritual)** — Level ? ?
+- **3rd-Ievel transmutation** — Level ? ?
+- **3rd-Ievel transmutation (ritual)** — Level ? ?
+- **3rd./eveI evocation** — Level ? ?
+- **3rd./evel abjuration** — Level ? ?
+- **3rd./evel necromancy** — Level ? ?
+- **3rd~evelevoeaUon** — Level ? ?
+- **4th-ievei conjuration** — Level ? ?
+- **4th-leveI abjuration** — Level ? ?
+- **4th-leveI divination** — Level ? ?
+- **4th-leveI eorijuration** — Level ? ?
+- **4th-leveI illusion** — Level ? ?
+- **4th-leveI transnllltation** — Level ? ?
+- **4th-levei conjuration** — Level ? ?
+- **4th-levei enchantment** — Level ? ?
+- **4th-levei evacatian** — Level ? ?
+- **4th-levei evocation** — Level ? ?
+- **4th-levei iIIusion** — Level ? ?
+- **4th-levei ilIusion** — Level ? ?
+- **4th-levei transmutation** — Level ? ?
+- **4th./evel evoeation** — Level ? ?
+- **5th-ievei abjuration** — Level ? ?
+- **5th-leveI abjuration** — Level ? ?
+- **5th-leveI enchantment** — Level ? ?
+- **5th-leveI enehantment** — Level ? ?
+- **5th-leveI iIIusion** — Level ? ?
+- **5th-leveI necromancy** — Level ? ?
+- **5th-leveI transmutation** — Level ? ?
+- **5th-levei cOlljuration** — Level ? ?
+- **5th-levei conjumtion** — Level ? ?
+- **5th-levei conjuration** — Level ? ?
+- **5th-levei divination** — Level ? ?
+- **5th-levei divination (ritual)** — Level ? ?
+- **5th-levei il/usion** — Level ? ?
+- **5th-levei illusion** — Level ? ?
+- **5th./evel iJJusion** — Level ? ?
+- **5th~eveIenchantment** — Level ? ?
+- **6th-ievel conjuration** — Level ? ?
+- **6th-leveI abjuration (ritual)** — Level ? ?
+- **6th-levei abjuration** — Level ? ?
+- **6th-levei conjuration** — Level ? ?
+- **6th-levei divination** — Level ? ?
+- **6th-levei enchantment** — Level ? ?
+- **6th-levei eonjuration** — Level ? ?
+- **6th-levei evocation** — Level ? ?
+- **6th-levei necromancy** — Level ? ?
+- **6th-levei neeromaney** — Level ? ?
+- **6th-levei transmutation** — Level ? ?
+- **6th./evel enchantment** — Level ? ?
+- **6th./evel necromancy** — Level ? ?
+- **7th-Je.-elevocalion** — Level ? ?
+- **7th-leveI eonjuration** — Level ? ?
+- **7th-leveI neeromaney** — Level ? ?
+- **7th-levei abjuration** — Level ? ?
+- **7th-levei conjuration** — Level ? ?
+- **7th-levei evocation** — Level ? ?
+- **7th-levei illusion** — Level ? ?
+- **7th-levei transmutation** — Level ? ?
+- **7th./evel conjuration** — Level ? ?
+- **7th./evel evoeation** — Level ? ?
+- **8th-leveI abjuration** — Level ? ?
+- **8th-leveI evocation** — Level ? ?
+- **8th-levei conjuration** — Level ? ?
+- **8th-levei enchantment** — Level ? ?
+- **8th-levei necromancy** — Level ? ?
+- **8th./eveI conjuration** — Level ? ?
+- **8th./evel evocation** — Level ? ?
+- **8th~evelenchantment** — Level ? ?
+- **9th-leveI conjuration** — Level ? ?
+- **9th-leveI divination** — Level ? ?
+- **9th-leveI necromancy** — Level ? ?
+- **9th-leveI transmutation** — Level ? ?
+- **9th-levei abjuration** — Level ? ?
+- **9th-levei enchantment** — Level ? ?
+- **9th-levei evocation** — Level ? ?
+- **9th-levei illusion** — Level ? ?
+- **9th./evel conjuration** — Level ? ?
+- **ANIMAL** — Level ? ?
+- **ANIMATE** — Level ? ?
+- **ARCANE EYE** — Level ? ?
+- **Abjuratian cantrip** — Level ? ?
+- **Areane Gale** — Level ? ?
+- **BEINGS** — Level ? ?
+- **BLESS** — Level ? ?
+- **BLIGHT** — Level ? ?
+- **BLINDNESS/DEAFNESS** — Level ? ?
+- **BLINK** — Level ? ?
+- **CALM EMOTIONS** — Level ? ?
+- **CHARM PERSON** — Level ? ?
+- **CLOUD** — Level ? ?
+- **COUNTERSPELL** — Level ? ?
+- **CREATE** — Level ? ?
+- **Conjuration cantrip** — Level ? ?
+- **DETECT THOUGHTS** — Level ? ?
+- **DIVINE** — Level ? ?
+- **Divination cantrip** — Level ? ?
+- **ELEMENTALS** — Level ? ?
+- **ENTANGLE** — Level ? ?
+- **ENTHRALL** — Level ? ?
+- **EVARD'S BLACK TENTACLES** — Level ? ?
+- **EXPEDITIOUS** — Level ? ?
+- **EYEBITE** — Level ? ?
+- **Elherealness** — Level ? ?
+- **Enchantmentcantrip** — Level ? ?
+- **Evocation cantrip** — Level ? ?
+- **Evoeation eantrip** — Level ? ?
+- **FRIENDSHIP** — Level ? ?
+- **GATE** — Level ? ?
+- **I SPELLS** — Level ? ?
+- **ILLUSION** — Level ? ?
+- **INFLICT WOUNDS** — Level ? ?
+- **Ist./evel abjuration** — Level ? ?
+- **Ist./evel evocation** — Level ? ?
+- **LIGHTNING** — Level ? ?
+- **MASS CURE WOUNDS** — Level ? ?
+- **MESSENGER** — Level ? ?
+- **MONSTER** — Level ? ?
+- **Necromancy cantrip** — Level ? ?
+- **Neeromaneyeantrip** — Level ? ?
+- **ORB** — Level ? ?
+- **PERSON** — Level ? ?
+- **PLANE** — Level ? ?
+- **PRISMATIC SPRAY** — Level ? ?
+- **PRIVATE SANCTUM** — Level ? ?
+- **Power Word Slun** — Level ? ?
+- **Programmed Illusion** — Level ? ?
+- **REINCARNATE** — Level ? ?
+- **RETREAT** — Level ? ?
+- **SHATTER** — Level ? ?
+- **SMITE** — Level ? ?
+- **SUMMONS** — Level ? ?
+- **TELEKINESIS** — Level ? ?
+- **TELEPORTATION** — Level ? ?
+- **TRUE RESURRECTION** — Level ? ?
+- **TRUE SEEING** — Level ? ?
+- **Transmutation cantrip** — Level ? ?
+- **WEATHER** — Level ? ?
+- **WORD** — Level ? ?
+- **doesn't Inove into obviously** — Level ? ?
+- **gp, which lhe spell consumes)** — Level ? ?
+- **lIlusion cantrip** — Level ? ?
+- **ld8 for each slot levei above 2nd.** — Level ? ?
+- **ld8 for eaeh slot leveI above 1st.** — Level ? ?
+- **materiais worth at least 5 gp)** — Level ? ?
+- **or a few grains of sand if destroying it)** — Level ? ?
+- **unoccupied space.** — Level ? ?
+- **when it hits with a weapon attack.** — Level ? ?
