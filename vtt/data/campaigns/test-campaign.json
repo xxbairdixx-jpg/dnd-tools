@@ -1,0 +1,33 @@
+{
+  "map_size": [
+    60,
+    60
+  ],
+  "tokens": {
+    "token_1": {
+      "id": "token_1",
+      "name": "Test Fighter",
+      "type": "npc",
+      "x": 7,
+      "y": 8,
+      "hp": 18,
+      "max_hp": 10,
+      "ac": 18,
+      "size": "medium",
+      "color": "#3498db",
+      "image": null,
+      "conditions": []
+    }
+  },
+  "initiative": [],
+  "turn": null,
+  "round": 0,
+  "fog": [],
+  "map_background": null,
+  "lights": [],
+  "walls": [],
+  "combat_active": false,
+  "next_token_id": 2,
+  "saved_at": "2026-03-18T20:43:27.012659",
+  "campaign_name": "test-campaign"
+}

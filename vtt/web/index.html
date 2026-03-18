@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&D VTT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="toolbar">
+      <button id="btn-grid" class="active" title="Toggle Grid">⊞</button>
+      <button id="btn-grid-size" title="Grid Size">📐</button>
+      <button id="btn-fog" title="Toggle Fog">🌫️</button>
+      <button id="btn-add-token" title="Add Token">➕</button>
+      <button id="btn-set-bg" title="Set Map Background">🗺️</button>
+      <button id="btn-save-map" title="Save Current Map">💾🗺️</button>
+      <button id="btn-switch-map" title="Switch Map">🔄🗺️</button>
+      <div id="weather-bar">
+        <button class="weather-btn" data-weather="none" title="Clear">☀️</button>
+        <button class="weather-btn" data-weather="rain" title="Rain">🌧️</button>
+        <button class="weather-btn" data-weather="snow" title="Snow">❄️</button>
+        <button class="weather-btn" data-weather="fog" title="Fog">🌫️</button>
+        <button class="weather-btn" data-weather="night" title="Night">🌙</button>
+      </div>
+      <button id="btn-pin" title="Add Map Pin">📍</button>
+      <button id="btn-encounter" title="Encounter Builder">⚔️</button>
+      <button id="btn-loot" title="Loot Generator">💰</button>
+      <button id="btn-party" title="Party Tracker">👥</button>
+      <button id="btn-calendar" title="Calendar">📅</button>
+      <button id="btn-rules" title="Rules Reference">📖</button>
+      <div id="spell-bar">
+        <button class="spell-btn" data-effect="fire" title="Fireball">🔥</button>
+        <button class="spell-btn" data-effect="lightning" title="Lightning Bolt">⚡</button>
+        <button class="spell-btn" data-effect="frost" title="Cone of Cold">❄️</button>
+        <button class="spell-btn" data-effect="heal" title="Healing">💚</button>
+      </div>
+      <button id="btn-assets" title="Asset Browser">📦</button>
+      <button id="btn-save" title="Save Campaign">💾</button>
+      <button id="btn-load" title="Load Campaign">📂</button>
+      <button id="btn-ruler" title="Ruler Tool">📏</button>
+      <button id="btn-wall" title="Draw Wall">🧱</button>
+      <button id="btn-door" title="Draw Door">🚪</button>
+      <button id="btn-terrain" title="Difficult Terrain">🟫</button>
+      <button id="btn-sound" title="Sound Zone">🔊</button>
+      <div id="template-bar">
+        <button class="template-btn" data-shape="sphere" title="Sphere (Fireball)">⬤</button>
+        <button class="template-btn" data-shape="cube" title="Cube">◼</button>
+        <button class="template-btn" data-shape="cone" title="Cone">◥</button>
+        <button class="template-btn" data-shape="line" title="Line">━</button>
+      </div>
+      <div id="dice-bar">
+        <button class="dice" data-notation="1d4">d4</button>
+        <button class="dice" data-notation="1d6">d6</button>
+        <button class="dice" data-notation="1d8">d8</button>
+        <button class="dice" data-notation="1d10">d10</button>
+        <button class="dice" data-notation="1d12">d12</button>
+        <button class="dice" data-notation="1d20">d20</button>
+        <button class="dice" data-notation="1d100">d100</button>
+      </div>
+      <div id="combat-bar">
+        <button id="btn-start-combat" title="Start Combat">⚔️ Start</button>
+        <button id="btn-end-turn" title="End Turn">⏭️ Next</button>
+      </div>
+      <div id="zoom-controls">
+        <button id="btn-zoom-in">+</button>
+        <span id="zoom-level">100%</span>
+        <button id="btn-zoom-out">−</button>
+      </div>
+    </div>
+    <div id="main">
+      <div id="map-container">
+        <canvas id="map-canvas"></canvas>
+      </div>
+      <div id="sidebar">
+        <div id="initiative-panel">
+          <h3>Initiative</h3>
+          <div class="init-empty">No active combat</div>
+        </div>
+        <div id="chat-panel">
+          <h3>Chat</h3>
+          <div id="chat-log"></div>
+          <div id="chat-input">
+            <input type="text" id="chat-text" placeholder="Type message...">
+            <button id="chat-send">Send</button>
+          </div>
+        </div>
+        <div id="token-panel">
+          <h3>Tokens</h3>
+          <div id="token-list"></div>
+        </div>
+        <div id="character-panel">
+          <h3>Selected Token</h3>
+          <div id="char-sheet">
+            <div class="char-empty">Click a token to view details</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="encounter-modal" class="modal hidden">
+    <div class="modal-content" style="min-width:400px;">
+      <h3>⚔️ Encounter Builder</h3>
+      <label>Party Level: <input type="number" id="enc-party-level" value="5" min="1" max="20"></label>
+      <label>Party Size: <input type="number" id="enc-party-size" value="4" min="1" max="10"></label>
+      <label>Monster CRs (comma separated): <input type="text" id="enc-monster-crs" value="1,1,1/4" placeholder="e.g. 2,1,1/2"></label>
+      <div id="enc-result" style="margin-top:12px;padding:10px;background:#2d2d44;border-radius:6px;"></div>
+      <div class="modal-buttons">
+        <button id="enc-calculate">Calculate</button>
+        <button id="enc-close">Close</button>
+      </div>
+    </div>
+  </div>
+  <div id="party-modal" class="modal hidden">
+    <div class="modal-content" style="min-width:400px;">
+      <h3>👥 Party Resources</h3>
+      <div id="party-resources" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;"></div>
+      <div class="modal-buttons">
+        <button id="party-close">Close</button>
+      </div>
+    </div>
+  </div>
+  <div id="grid-modal" class="modal hidden">
+    <div class="modal-content" style="min-width:300px;">
+      <h3>📐 Grid Size</h3>
+      <label>Width (cells): <input type="number" id="grid-width" value="60" min="10" max="200"></label>
+      <label>Height (cells): <input type="number" id="grid-height" value="40" min="10" max="200"></label>
+      <div style="font-size:11px;color:#888;margin-top:4px;">Each cell = 5 feet</div>
+      <div class="modal-buttons">
+        <button id="grid-apply">Apply</button>
+        <button id="grid-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <div id="map-modal" class="modal hidden">
+    <div class="modal-content" style="min-width:400px;">
+      <h3>🔄 Switch Map</h3>
+      <div id="map-list" style="max-height:300px;overflow-y:auto;"></div>
+      <div class="modal-buttons">
+        <button id="map-close">Close</button>
+      </div>
+    </div>
+  </div>
+  <div id="rules-modal" class="modal hidden">
+    <div class="modal-content" style="min-width:600px;max-width:800px;max-height:80vh;">
+      <h3>📖 Rules Reference</h3>
+      <div style="display:flex;gap:8px;margin-bottom:12px;">
+        <input type="text" id="rules-search" placeholder="Search rules (e.g. 'grappled', 'fireball', 'initiative')..." style="flex:1;background:#2d2d44;border:1px solid #444;color:#e0e0e0;padding:8px;border-radius:4px;">
+        <button id="rules-search-btn" style="background:#3498db;border:none;color:white;padding:8px 16px;border-radius:4px;cursor:pointer;">Search</button>
+      </div>
+      <div id="rules-file-list" style="display:flex;gap:4px;flex-wrap:wrap;margin-bottom:12px;"></div>
+      <div id="rules-content" style="max-height:400px;overflow-y:auto;background:#2d2d44;padding:12px;border-radius:6px;font-size:13px;line-height:1.5;"></div>
+      <div class="modal-buttons">
+        <button id="rules-close">Close</button>
+      </div>
+    </div>
+  </div>
+  <div id="calendar-modal" class="modal hidden">
+    <div class="modal-content" style="min-width:350px;">
+      <h3>📅 Calendar</h3>
+      <div id="calendar-display" style="text-align:center;font-size:18px;margin:12px 0;"></div>
+      <div style="display:flex;gap:8px;justify-content:center;margin:12px 0;">
+        <button class="cal-btn" data-hours="1">+1h</button>
+        <button class="cal-btn" data-hours="8">+8h</button>
+        <button class="cal-btn" data-hours="24">+1 day</button>
+        <button class="cal-btn" data-hours="168">+1 week</button>
+      </div>
+      <div class="modal-buttons">
+        <button id="calendar-close">Close</button>
+      </div>
+    </div>
+  </div>
+  <div id="loot-modal" class="modal hidden">
+    <div class="modal-content" style="min-width:400px;">
+      <h3>💰 Loot Generator</h3>
+      <label>CR: <input type="text" id="loot-cr" value="5" placeholder="e.g. 5 or 1/4"></label>
+      <label>Items: <input type="number" id="loot-count" value="2" min="1" max="5"></label>
+      <div id="loot-result" style="margin-top:12px;padding:10px;background:#2d2d44;border-radius:6px;"></div>
+      <div class="modal-buttons">
+        <button id="loot-generate">Generate</button>
+        <button id="loot-close">Close</button>
+      </div>
+    </div>
+  </div>
+  <div id="asset-modal" class="modal hidden">
+    <div class="modal-content asset-browser">
+      <h3>Asset Browser</h3>
+      <div id="asset-tabs">
+        <button class="asset-tab active" data-tab="maps">🗺️ Maps</button>
+        <button class="asset-tab" data-tab="tokens">🎭 Tokens</button>
+        <button class="asset-tab" data-tab="objects">🪑 Objects</button>
+      </div>
+      <div id="asset-grid"></div>
+      <div class="modal-buttons">
+        <button id="asset-close">Close</button>
+      </div>
+    </div>
+  </div>
+  <div id="token-modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Add Token</h3>
+      <label>Name: <input type="text" id="token-name" value="Token"></label>
+      <label>Color: <input type="color" id="token-color" value="#e74c3c"></label>
+      <label>X: <input type="number" id="token-x" value="5" min="0"></label>
+      <label>Y: <input type="number" id="token-y" value="5" min="0"></label>
+      <label>HP: <input type="number" id="token-hp" value="10" min="0"></label>
+      <label>AC: <input type="number" id="token-ac" value="10" min="0"></label>
+      <label>Size:
+        <select id="token-size">
+          <option value="tiny">Tiny (2.5ft)</option>
+          <option value="small">Small (5ft)</option>
+          <option value="medium" selected>Medium (5ft)</option>
+          <option value="large">Large (10ft)</option>
+          <option value="huge">Huge (15ft)</option>
+          <option value="gargantuan">Gargantuan (20ft)</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="token-hidden"> Hidden from players</label>
+      <div class="modal-buttons">
+        <button id="token-add">Add</button>
+        <button id="token-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+  <script src="ui.js"></script>
+</body>
+</html>

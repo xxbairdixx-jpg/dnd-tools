@@ -1,0 +1,104 @@
+{
+  "map_size": [
+    60,
+    60
+  ],
+  "tokens": {
+    "token_1": {
+      "id": "token_1",
+      "name": "Test Fighter",
+      "type": "npc",
+      "x": 7,
+      "y": 8,
+      "hp": 18,
+      "max_hp": 10,
+      "ac": 18,
+      "size": "medium",
+      "color": "#3498db",
+      "image": null,
+      "conditions": []
+    },
+    "token_2": {
+      "id": "token_2",
+      "name": "Fighter",
+      "type": "npc",
+      "x": 6,
+      "y": 7,
+      "hp": 20,
+      "max_hp": 10,
+      "ac": 18,
+      "size": "medium",
+      "color": "#3498db",
+      "image": null,
+      "conditions": []
+    },
+    "token_3": {
+      "id": "token_3",
+      "name": "Ogre",
+      "type": "npc",
+      "x": 10,
+      "y": 10,
+      "hp": 10,
+      "max_hp": 10,
+      "ac": 11,
+      "size": "large",
+      "color": "#8e44ad",
+      "image": null,
+      "conditions": []
+    },
+    "token_4": {
+      "id": "token_4",
+      "name": "Torch",
+      "type": "npc",
+      "x": 8,
+      "y": 8,
+      "hp": 10,
+      "max_hp": 10,
+      "ac": 10,
+      "size": "medium",
+      "color": "#f1c40f",
+      "image": null,
+      "conditions": []
+    }
+  },
+  "initiative": [
+    "token_1",
+    "token_2",
+    "token_3"
+  ],
+  "turn": "token_2",
+  "round": 1,
+  "fog": [
+    {
+      "x": 10,
+      "y": 10,
+      "radius": 5,
+      "type": "reveal"
+    }
+  ],
+  "map_background": "/assets/maps/default/dungeon_stone.png",
+  "lights": [],
+  "walls": [
+    {
+      "x1": 0,
+      "y1": 0,
+      "x2": 10,
+      "y2": 0,
+      "type": "stone"
+    }
+  ],
+  "combat_active": true,
+  "weather": "rain",
+  "weather_intensity": 2,
+  "pins": [
+    {
+      "x": 15,
+      "y": 15,
+      "label": "Tavern",
+      "color": "#f1c40f"
+    }
+  ],
+  "next_token_id": 5,
+  "saved_at": "2026-03-18T22:09:59.595426",
+  "campaign_name": "test-save"
+}
