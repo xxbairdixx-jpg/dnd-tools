@@ -150,6 +150,53 @@ def create_app(engine: Engine = None) -> Flask:
         broadcast({"type": "condition_removed", **result})
         return jsonify(result)
 
+    @app.route("/api/combat/concentration", methods=["POST"])
+    def set_concentration():
+        data = request.json
+        result = engine.call_api("set_concentration", token_id=data["token_id"], spell=data.get("spell", ""), dc=data.get("dc", 10))
+        broadcast({"type": "concentration_set", **result})
+        return jsonify(result)
+
+    @app.route("/api/combat/concentration/break", methods=["POST"])
+    def break_concentration():
+        data = request.json
+        result = engine.call_api("break_concentration", token_id=data["token_id"])
+        broadcast({"type": "concentration_broken", **result})
+        return jsonify(result)
+
+    @app.route("/api/combat/death-save", methods=["POST"])
+    def death_save():
+        data = request.json
+        result = engine.call_api("death_save", token_id=data["token_id"], success=data.get("success", True))
+        broadcast({"type": "death_save", **result})
+        return jsonify(result)
+
+    @app.route("/api/combat/death-saves/reset", methods=["POST"])
+    def reset_death_saves():
+        data = request.json
+        result = engine.call_api("reset_death_saves", token_id=data["token_id"])
+        return jsonify(result)
+
+    @app.route("/api/combat/short-rest", methods=["POST"])
+    def short_rest():
+        data = request.json or {}
+        result = engine.call_api("short_rest", token_ids=data.get("token_ids"))
+        broadcast({"type": "short_rest", **result})
+        return jsonify(result)
+
+    @app.route("/api/combat/long-rest", methods=["POST"])
+    def long_rest():
+        data = request.json or {}
+        result = engine.call_api("long_rest", token_ids=data.get("token_ids"))
+        broadcast({"type": "long_rest", **result})
+        return jsonify(result)
+
+    @app.route("/api/combat/roll-initiative", methods=["POST"])
+    def roll_initiative():
+        data = request.json or {}
+        result = engine.call_api("roll_initiative", token_ids=data.get("token_ids"))
+        return jsonify(result)
+
     @app.route("/api/map/background", methods=["POST"])
     def set_background():
         data = request.json

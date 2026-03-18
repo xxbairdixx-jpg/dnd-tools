@@ -160,6 +160,8 @@ function renderCharSheet(t) {
       <button onclick="quickDamage('${t.id}',1)" style="flex:1;background:#e67e22;border:none;color:white;padding:4px;border-radius:4px;cursor:pointer;font-size:11px;">-1 HP</button>
       <button onclick="quickHeal('${t.id}',5)" style="flex:1;background:#27ae60;border:none;color:white;padding:4px;border-radius:4px;cursor:pointer;font-size:11px;">+5 HP</button>
     </div>
+    ${t.concentration ? `<div style="margin-top:6px;background:#8e44ad22;padding:4px 6px;border-radius:4px;font-size:11px;border:1px solid #8e44ad;">🔮 Concentrating: ${escapeHtml(t.concentration.spell || '?')} (DC ${t.concentration.dc || 10}) <button onclick="breakConcentration('${t.id}')" style="background:none;border:none;color:#e74c3c;cursor:pointer;">✕</button></div>` : ''}
+    ${t.hp !== undefined && t.hp <= 0 ? `<div style="margin-top:6px;background:#c0392b22;padding:4px 6px;border-radius:4px;font-size:11px;border:1px solid #c0392b;">💀 Death Saves: ${'✅'.repeat(t.death_saves?.successes || 0)}${'⬜'.repeat(3 - (t.death_saves?.successes || 0))} | ${'❌'.repeat(t.death_saves?.failures || 0)}${'⬜'.repeat(3 - (t.death_saves?.failures || 0))}<div style="display:flex;gap:4px;margin-top:4px;"><button onclick="deathSave('${t.id}',true)" style="flex:1;background:#27ae60;border:none;color:white;padding:2px;border-radius:3px;cursor:pointer;font-size:10px;">Success</button><button onclick="deathSave('${t.id}',false)" style="flex:1;background:#c0392b;border:none;color:white;padding:2px;border-radius:3px;cursor:pointer;font-size:10px;">Failure</button></div></div>` : ''}
     ${t.notes ? `<div style="margin-top:6px;background:#1a1a2e;padding:6px;border-radius:4px;font-size:11px;color:#aaa;max-height:60px;overflow-y:auto;">📝 ${escapeHtml(t.notes)}</div>` : ''}
     <div style="margin-top:6px;">
       <button onclick="editNotes('${t.id}')" style="flex:1;background:#2d2d44;border:1px solid #444;color:#e0e0e0;padding:3px;border-radius:4px;cursor:pointer;font-size:10px;width:100%;">📝 Edit Notes</button>
@@ -203,6 +205,20 @@ window.addCondition = (id, condition) => {
     fetch('/api/state').then(r => r.json()).then(s => { state = s; render(); if (selectedToken) renderCharSheet(state.tokens[selectedToken.id] || selectedToken); });
   });
 };
+window.breakConcentration = (id) => {
+  fetch('/api/combat/concentration/break', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token_id: id }) })
+    .then(() => fetch('/api/state').then(r => r.json()).then(s => { state = s; render(); if (selectedToken) renderCharSheet(state.tokens[selectedToken.id] || selectedToken); }));
+};
+
+window.deathSave = (id, success) => {
+  fetch('/api/combat/death-save', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token_id: id, success }) })
+    .then(r => r.json()).then(data => {
+      if (data.stabilized) addChat('System', `${state.tokens[id]?.name || 'Token'} is stabilized!`);
+      if (data.dead) addChat('System', `${state.tokens[id]?.name || 'Token'} has died!`);
+      fetch('/api/state').then(r => r.json()).then(s => { state = s; render(); if (selectedToken) renderCharSheet(state.tokens[selectedToken.id] || selectedToken); });
+    });
+};
+
 window.editNotes = (id) => {
   const token = state.tokens[id];
   if (!token) return;
@@ -275,6 +291,38 @@ document.getElementById('btn-start-combat')?.addEventListener('click', () => {
 
 document.getElementById('btn-end-turn')?.addEventListener('click', () => {
   fetch('/api/combat/end-turn', { method: 'POST' });
+});
+
+document.getElementById('btn-auto-init')?.addEventListener('click', () => {
+  const tokenIds = Object.keys(state.tokens);
+  if (tokenIds.length < 2) { addChat('System', 'Need at least 2 tokens'); return; }
+  fetch('/api/combat/roll-initiative', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token_ids: tokenIds }) })
+    .then(r => r.json()).then(data => {
+      const rolls = Object.entries(data.rolls).map(([id, r]) => `${r.name}: ${r.roll}+${r.modifier}=${r.total}`).join(', ');
+      addChat('Initiative', `🎲 ${rolls}`);
+    });
+});
+
+document.getElementById('btn-concentrate')?.addEventListener('click', () => {
+  if (!selectedToken) { addChat('System', 'Select a token first'); return; }
+  const spell = prompt('Spell name:', '');
+  if (spell !== null) {
+    const dc = parseInt(prompt('Concentration DC:', '10')) || 10;
+    fetch('/api/combat/concentration', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token_id: selectedToken.id, spell, dc }) })
+      .then(() => fetch('/api/state').then(r => r.json()).then(s => { state = s; renderCharSheet(state.tokens[selectedToken.id] || selectedToken); }));
+  }
+});
+
+document.getElementById('btn-short-rest')?.addEventListener('click', () => {
+  if (!confirm('Take a short rest? (All tokens)')) return;
+  fetch('/api/combat/short-rest', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' })
+    .then(r => r.json()).then(() => { addChat('System', '😴 Short rest taken'); fetch('/api/state').then(r => r.json()).then(s => { state = s; render(); updateTokenList(); }); });
+});
+
+document.getElementById('btn-long-rest')?.addEventListener('click', () => {
+  if (!confirm('Take a long rest? (Full heal, reset all)')) return;
+  fetch('/api/combat/long-rest', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' })
+    .then(r => r.json()).then(() => { addChat('System', '🛏️ Long rest taken — all HP restored!'); fetch('/api/state').then(r => r.json()).then(s => { state = s; render(); updateTokenList(); }); });
 });
 
 // --- Grid Size ---
