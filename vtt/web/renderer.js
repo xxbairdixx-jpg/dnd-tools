@@ -232,6 +232,33 @@ function render() {
       ctx.stroke();
     }
 
+    // Bloodied indicator
+    if (t.hp !== undefined && t.max_hp && t.hp <= t.max_hp / 2 && t.hp > 0) {
+      ctx.fillStyle = 'rgba(231, 76, 60, 0.3)';
+      ctx.beginPath();
+      ctx.arc(tx, ty, r + 2, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    // Unconscious indicator
+    if (t.hp !== undefined && t.hp <= 0) {
+      ctx.fillStyle = '#000';
+      ctx.font = `bold ${r}px sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.fillText('💀', tx, ty + r * 0.3);
+    }
+
+    // Condition icons
+    if (t.conditions && t.conditions.length > 0) {
+      const icons = { blinded: '👁️', charmed: '💕', deafened: '👂', frightened: '😱', grappled: '🤼', incapacitated: '💫', invisible: '👻', paralyzed: '🧊', petrified: '🗿', poisoned: '☠️', prone: '⬇️', restrained: '⛓️', stunned: '⭐', unconscious: '💤' };
+      t.conditions.forEach((c, i) => {
+        if (icons[c]) {
+          ctx.font = '12px sans-serif';
+          ctx.fillText(icons[c], tx - r + i * 14, ty - r - 4);
+        }
+      });
+    }
+
     // Reset alpha
     ctx.globalAlpha = 1;
   });
@@ -373,6 +400,40 @@ function render() {
       ctx.beginPath();
       ctx.arc(e.x * cs + cs/2, e.y * cs + cs/2, e.radius * cs * (1 - alpha) * 0.5, 0, Math.PI * 2);
       ctx.fill();
+    } else if (e.type === 'acid') {
+      ctx.fillStyle = `rgba(100, 200, 0, ${alpha * 0.4})`;
+      for (let i = 0; i < 6; i++) {
+        const angle = (i / 6) * Math.PI * 2 + e.x;
+        const dist = e.radius * 0.4 * (1 - alpha);
+        ctx.beginPath();
+        ctx.arc(e.x * cs + cs/2 + Math.cos(angle) * dist * cs, e.y * cs + cs/2 + Math.sin(angle) * dist * cs, 4, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    } else if (e.type === 'thunder') {
+      ctx.fillStyle = `rgba(200, 200, 255, ${alpha * 0.3})`;
+      ctx.beginPath();
+      ctx.arc(e.x * cs + cs/2, e.y * cs + cs/2, e.radius * cs * (1 + (1 - alpha) * 0.5), 0, Math.PI * 2);
+      ctx.fill();
+      ctx.strokeStyle = `rgba(255, 255, 255, ${alpha})`;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.arc(e.x * cs + cs/2, e.y * cs + cs/2, e.radius * cs * alpha, 0, Math.PI * 2);
+      ctx.stroke();
+    } else if (e.type === 'radiant') {
+      ctx.fillStyle = `rgba(255, 255, 200, ${alpha * 0.5})`;
+      ctx.beginPath();
+      ctx.arc(e.x * cs + cs/2, e.y * cs + cs/2, e.radius * cs * 0.3, 0, Math.PI * 2);
+      ctx.fill();
+      // Rays
+      ctx.strokeStyle = `rgba(255, 255, 150, ${alpha * 0.7})`;
+      ctx.lineWidth = 2;
+      for (let i = 0; i < 8; i++) {
+        const angle = (i / 8) * Math.PI * 2;
+        ctx.beginPath();
+        ctx.moveTo(e.x * cs + cs/2, e.y * cs + cs/2);
+        ctx.lineTo(e.x * cs + cs/2 + Math.cos(angle) * e.radius * cs * (1 - alpha * 0.5), e.y * cs + cs/2 + Math.sin(angle) * e.radius * cs * (1 - alpha * 0.5));
+        ctx.stroke();
+      }
     }
 
     ctx.globalAlpha = 1;

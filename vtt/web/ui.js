@@ -160,6 +160,10 @@ function renderCharSheet(t) {
       <button onclick="quickDamage('${t.id}',1)" style="flex:1;background:#e67e22;border:none;color:white;padding:4px;border-radius:4px;cursor:pointer;font-size:11px;">-1 HP</button>
       <button onclick="quickHeal('${t.id}',5)" style="flex:1;background:#27ae60;border:none;color:white;padding:4px;border-radius:4px;cursor:pointer;font-size:11px;">+5 HP</button>
     </div>
+    ${t.notes ? `<div style="margin-top:6px;background:#1a1a2e;padding:6px;border-radius:4px;font-size:11px;color:#aaa;max-height:60px;overflow-y:auto;">📝 ${escapeHtml(t.notes)}</div>` : ''}
+    <div style="margin-top:6px;">
+      <button onclick="editNotes('${t.id}')" style="flex:1;background:#2d2d44;border:1px solid #444;color:#e0e0e0;padding:3px;border-radius:4px;cursor:pointer;font-size:10px;width:100%;">📝 Edit Notes</button>
+    </div>
     <div style="margin-top:6px;">
       <select onchange="addCondition('${t.id}',this.value);this.value='';" style="width:100%;background:#2d2d44;border:1px solid #444;color:#e0e0e0;padding:3px;border-radius:4px;font-size:11px;">
         <option value="">+ Add Condition</option>
@@ -199,6 +203,22 @@ window.addCondition = (id, condition) => {
     fetch('/api/state').then(r => r.json()).then(s => { state = s; render(); if (selectedToken) renderCharSheet(state.tokens[selectedToken.id] || selectedToken); });
   });
 };
+window.editNotes = (id) => {
+  const token = state.tokens[id];
+  if (!token) return;
+  const notes = prompt('Token notes:', token.notes || '');
+  if (notes !== null) {
+    fetch('/api/token/update', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token_id: id, notes })
+    }).then(() => {
+      token.notes = notes;
+      renderCharSheet(token);
+    });
+  }
+};
+
 window.removeCondition = (id, condition) => {
   fetch('/api/combat/condition/remove', {
     method: 'POST',
@@ -275,6 +295,15 @@ document.getElementById('grid-apply')?.addEventListener('click', () => {
     });
 });
 
+// --- Export Map ---
+document.getElementById('btn-export')?.addEventListener('click', () => {
+  const link = document.createElement('a');
+  link.download = `vtt-map-${Date.now()}.png`;
+  link.href = canvas.toDataURL('image/png');
+  link.click();
+  addChat('System', 'Map exported as PNG!');
+});
+
 // --- Map Management ---
 document.getElementById('btn-save-map')?.addEventListener('click', () => {
   const name = prompt('Map name:', state.current_map || 'default');
@@ -337,8 +366,8 @@ canvas.addEventListener('click', (e) => {
   const gx = Math.floor(mx / CELL_SIZE);
   const gy = Math.floor(my / CELL_SIZE);
 
-  const colors = { fire: '#ff6600', lightning: '#ffff66', frost: '#96c8ff', heal: '#2ecc71' };
-  const radii = { fire: 4, lightning: 1, frost: 3, heal: 1 };
+  const colors = { fire: '#ff6600', lightning: '#ffff66', frost: '#96c8ff', acid: '#64c800', thunder: '#c8c8ff', radiant: '#ffffc8', heal: '#2ecc71' };
+  const radii = { fire: 4, lightning: 1, frost: 3, acid: 2, thunder: 3, radiant: 2, heal: 1 };
 
   effects.push({
     type: spellMode,
