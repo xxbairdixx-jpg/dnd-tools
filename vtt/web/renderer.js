@@ -20,6 +20,9 @@ let state = {
 let zoom = 1;
 let showGrid = true;
 let showFog = false;
+let showTokens = true;
+let showWalls = true;
+let showEffects = true;
 let dragToken = null;
 let dragOffset = { x: 0, y: 0 };
 const CELL_SIZE = 40;
@@ -36,6 +39,12 @@ let templateCells = [];
 // Wall drawing state
 let wallMode = null; // 'wall' or 'door'
 let wallStart = null;
+
+// Symmetry mode
+let symmetryMode = null; // 'horizontal', 'vertical', 'both'
+
+// Pathfinding
+let currentPath = [];
 
 // Selection state
 let selectedTokens = [];
@@ -174,7 +183,8 @@ function render() {
   });
 
   // Tokens
-  Object.values(state.tokens).forEach(t => {
+  if (showTokens) {
+    Object.values(state.tokens).forEach(t => {
     // Skip hidden tokens (for players — GM sees all)
     if (t.hidden) {
       ctx.globalAlpha = 0.3;
@@ -261,10 +271,12 @@ function render() {
 
     // Reset alpha
     ctx.globalAlpha = 1;
-  });
+    });
+  }
 
   // Sound Zones
-  (state.sound_zones || []).forEach(zone => {
+  if (showEffects) {
+    (state.sound_zones || []).forEach(zone => {
     const grd = ctx.createRadialGradient(
       zone.x * cs + cs/2, zone.y * cs + cs/2, 0,
       zone.x * cs + cs/2, zone.y * cs + cs/2, zone.radius * cs
@@ -281,7 +293,8 @@ function render() {
     ctx.font = '16px sans-serif';
     ctx.textAlign = 'center';
     ctx.fillText('🔊', zone.x * cs + cs/2, zone.y * cs + cs/2 + 5);
-  });
+    });
+  }
 
   // Difficult Terrain
   (state.difficult_terrain || []).forEach(([tx, ty]) => {
@@ -299,7 +312,8 @@ function render() {
   });
 
   // Walls
-  state.walls.forEach(w => {
+  if (showWalls) {
+    state.walls.forEach(w => {
     ctx.strokeStyle = w.type === 'door' ? '#8B4513' : '#666';
     ctx.lineWidth = w.type === 'door' ? 4 : 3;
     ctx.beginPath();
@@ -316,7 +330,54 @@ function render() {
       ctx.arc(mx, my, 6, 0, Math.PI * 2);
       ctx.fill();
     }
-  });
+    });
+  }
+
+  // Path visualization
+  if (currentPath.length > 1) {
+    ctx.strokeStyle = 'rgba(46, 204, 113, 0.8)';
+    ctx.lineWidth = 3;
+    ctx.setLineDash([6, 3]);
+    ctx.beginPath();
+    ctx.moveTo(currentPath[0][0] * cs + cs/2, currentPath[0][1] * cs + cs/2);
+    for (let i = 1; i < currentPath.length; i++) {
+      ctx.lineTo(currentPath[i][0] * cs + cs/2, currentPath[i][1] * cs + cs/2);
+    }
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Path dots
+    currentPath.forEach(([px, py], i) => {
+      if (i > 0 && i < currentPath.length - 1) {
+        ctx.fillStyle = 'rgba(46, 204, 113, 0.6)';
+        ctx.beginPath();
+        ctx.arc(px * cs + cs/2, py * cs + cs/2, 3, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    });
+  }
+
+  // Symmetry guide lines
+  if (symmetryMode) {
+    ctx.strokeStyle = 'rgba(52, 152, 219, 0.5)';
+    ctx.lineWidth = 2;
+    ctx.setLineDash([10, 5]);
+    const midX = state.map_size[0] * cs / 2;
+    const midY = state.map_size[1] * cs / 2;
+    if (symmetryMode === 'horizontal' || symmetryMode === 'both') {
+      ctx.beginPath();
+      ctx.moveTo(midX, 0);
+      ctx.lineTo(midX, state.map_size[1] * cs);
+      ctx.stroke();
+    }
+    if (symmetryMode === 'vertical' || symmetryMode === 'both') {
+      ctx.beginPath();
+      ctx.moveTo(0, midY);
+      ctx.lineTo(state.map_size[0] * cs, midY);
+      ctx.stroke();
+    }
+    ctx.setLineDash([]);
+  }
 
   // Measurement: Template
   if (templateCells.length > 0) {
@@ -653,6 +714,15 @@ canvas.addEventListener('mousemove', (e) => {
   if (dragToken) {
     dragToken.x = Math.max(0, Math.min(state.map_size[0] - 1, gx));
     dragToken.y = Math.max(0, Math.min(state.map_size[1] - 1, gy));
+    // Show path while dragging
+    fetch('/api/pathfind', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ x1: dragToken.x, y1: dragToken.y, x2: gx, y2: gy })
+    }).then(r => r.json()).then(data => {
+      currentPath = data.path || [];
+      render();
+    });
     render();
   }
 });

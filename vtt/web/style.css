@@ -16,6 +16,9 @@ body { font-family: 'Segoe UI', sans-serif; background: #0f0f23; color: #e0e0e0;
 #btn-end-turn { background: #2980b9; border-color: #2980b9; }
 #template-bar { display: flex; gap: 2px; margin-left: 4px; }
 .template-btn { min-width: 32px; font-size: 16px; }
+#symmetry-bar { display: flex; gap: 2px; margin-left: 4px; }
+.symmetry-btn { min-width: 28px; font-size: 14px; }
+.symmetry-btn.active { background: #3498db; border-color: #3498db; }
 #spell-bar { display: flex; gap: 2px; margin-left: 4px; }
 .spell-btn { min-width: 32px; font-size: 14px; }
 .spell-btn.active { background: #e74c3c; border-color: #e74c3c; }

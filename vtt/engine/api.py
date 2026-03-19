@@ -197,6 +197,57 @@ def create_app(engine: Engine = None) -> Flask:
         result = engine.call_api("roll_initiative", token_ids=data.get("token_ids"))
         return jsonify(result)
 
+    @app.route("/api/pathfind", methods=["POST"])
+    def pathfind():
+        """Find path from token to target, avoiding walls."""
+        data = request.json
+        x1, y1 = data["x1"], data["y1"]
+        x2, y2 = data["x2"], data["y2"]
+        # Simple A* pathfinding
+        import heapq
+        walls = set()
+        for w in engine.state.walls:
+            # Mark wall cells (simplified)
+            if w["x1"] == w["x2"]:  # Vertical wall
+                for y in range(min(w["y1"], w["y2"]), max(w["y1"], w["y2"]) + 1):
+                    walls.add((w["x1"], y))
+            else:  # Horizontal wall
+                for x in range(min(w["x1"], w["x2"]), max(w["x1"], w["x2"]) + 1):
+                    walls.add((x, w["y1"]))
+
+        def heuristic(a, b):
+            return abs(a[0] - b[0]) + abs(a[1] - b[1])
+
+        start = (x1, y1)
+        goal = (x2, y2)
+        open_set = [(0, start)]
+        came_from = {}
+        g_score = {start: 0}
+
+        while open_set:
+            _, current = heapq.heappop(open_set)
+            if current == goal:
+                path = []
+                while current in came_from:
+                    path.append(current)
+                    current = came_from[current]
+                path.append(start)
+                path.reverse()
+                return jsonify({"path": path, "length": len(path) - 1})
+
+            for dx, dy in [(0, 1), (1, 0), (0, -1), (-1, 0)]:
+                neighbor = (current[0] + dx, current[1] + dy)
+                if (0 <= neighbor[0] < engine.state.map_size[0] and
+                    0 <= neighbor[1] < engine.state.map_size[1] and
+                    neighbor not in walls):
+                    tentative = g_score[current] + 1
+                    if tentative < g_score.get(neighbor, float('inf')):
+                        came_from[neighbor] = current
+                        g_score[neighbor] = tentative
+                        heapq.heappush(open_set, (tentative + heuristic(neighbor, goal), neighbor))
+
+        return jsonify({"path": [], "length": -1, "error": "No path found"})
+
     @app.route("/api/map/background", methods=["POST"])
     def set_background():
         data = request.json

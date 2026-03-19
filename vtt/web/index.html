@@ -10,6 +10,9 @@
   <div id="app">
     <div id="toolbar">
       <button id="btn-grid" class="active" title="Toggle Grid">⊞</button>
+      <button id="btn-tokens-layer" class="active" title="Toggle Tokens">🎭</button>
+      <button id="btn-walls-layer" class="active" title="Toggle Walls">🧱</button>
+      <button id="btn-effects-layer" class="active" title="Toggle Effects">✨</button>
       <button id="btn-grid-size" title="Grid Size">📐</button>
       <button id="btn-fog" title="Toggle Fog">🌫️</button>
       <button id="btn-add-token" title="Add Token">➕</button>
@@ -46,6 +49,11 @@
       <button id="btn-wall" title="Draw Wall">🧱</button>
       <button id="btn-door" title="Draw Door">🚪</button>
       <button id="btn-terrain" title="Difficult Terrain">🟫</button>
+      <div id="symmetry-bar">
+        <button class="symmetry-btn" data-mode="horizontal" title="Horizontal Symmetry">⬌</button>
+        <button class="symmetry-btn" data-mode="vertical" title="Vertical Symmetry">⬍</button>
+        <button class="symmetry-btn" data-mode="both" title="Both Axes">✛</button>
+      </div>
       <button id="btn-sound" title="Sound Zone">🔊</button>
       <div id="template-bar">
         <button class="template-btn" data-shape="sphere" title="Sphere (Fireball)">⬤</button>
@@ -66,6 +74,7 @@
         <button id="btn-start-combat" title="Start Combat">⚔️ Start</button>
         <button id="btn-end-turn" title="End Turn">⏭️ Next</button>
         <button id="btn-auto-init" title="Roll Initiative for All">🎲 Init</button>
+        <button id="btn-reroll-init" title="Reroll Initiative">🔄🎲</button>
         <button id="btn-concentrate" title="Concentrate">🔮</button>
         <button id="btn-short-rest" title="Short Rest">😴</button>
         <button id="btn-long-rest" title="Long Rest">🛏️</button>

@@ -110,6 +110,9 @@ document.getElementById('token-add').addEventListener('click', () => {
 // --- Toolbar ---
 document.getElementById('btn-grid').addEventListener('click', () => { showGrid = !showGrid; document.getElementById('btn-grid').classList.toggle('active'); render(); });
 document.getElementById('btn-fog').addEventListener('click', () => { showFog = !showFog; document.getElementById('btn-fog').classList.toggle('active'); render(); });
+document.getElementById('btn-tokens-layer')?.addEventListener('click', () => { showTokens = !showTokens; document.getElementById('btn-tokens-layer').classList.toggle('active'); render(); });
+document.getElementById('btn-walls-layer')?.addEventListener('click', () => { showWalls = !showWalls; document.getElementById('btn-walls-layer').classList.toggle('active'); render(); });
+document.getElementById('btn-effects-layer')?.addEventListener('click', () => { showEffects = !showEffects; document.getElementById('btn-effects-layer').classList.toggle('active'); render(); });
 document.getElementById('btn-zoom-in').addEventListener('click', () => setZoom(zoom + 0.25));
 document.getElementById('btn-zoom-out').addEventListener('click', () => setZoom(zoom - 0.25));
 
@@ -300,6 +303,18 @@ document.getElementById('btn-auto-init')?.addEventListener('click', () => {
     .then(r => r.json()).then(data => {
       const rolls = Object.entries(data.rolls).map(([id, r]) => `${r.name}: ${r.roll}+${r.modifier}=${r.total}`).join(', ');
       addChat('Initiative', `🎲 ${rolls}`);
+      updateInitiative();
+    });
+});
+
+document.getElementById('btn-reroll-init')?.addEventListener('click', () => {
+  const tokenIds = state.initiative.length > 0 ? state.initiative : Object.keys(state.tokens);
+  if (tokenIds.length < 2) { addChat('System', 'Need at least 2 tokens'); return; }
+  fetch('/api/combat/roll-initiative', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token_ids: tokenIds }) })
+    .then(r => r.json()).then(data => {
+      const rolls = Object.entries(data.rolls).map(([id, r]) => `${r.name}: ${r.roll}+${r.modifier}=${r.total}`).join(', ');
+      addChat('Initiative', `🔄 Reroll: ${rolls}`);
+      updateInitiative();
     });
 });
 
@@ -730,6 +745,22 @@ canvas.addEventListener('click', (e) => {
       render();
     });
   }
+});
+
+// --- Symmetry ---
+document.querySelectorAll('.symmetry-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const mode = btn.dataset.mode;
+    if (symmetryMode === mode) {
+      symmetryMode = null;
+      btn.classList.remove('active');
+    } else {
+      symmetryMode = mode;
+      document.querySelectorAll('.symmetry-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+    render();
+  });
 });
 
 // --- Difficult Terrain ---
