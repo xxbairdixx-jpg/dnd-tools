@@ -1,0 +1,255 @@
+# D&D 5e Sword Coast Adventurer's Guide — Content
+
+*Extracted from PDF*
+
+## Subclasses (244)
+
+- an oath of vengeance.
+- the north and south that isn't under the sway of a more
+- patronage of a temple, and users of arcane magic who
+- domains known as the Border Kingdoms. Here, along
+- traditional borders.
+- Rashemen is a fiercely traditional nation. It is ruled
+- Greengrass. The traditiona l beginning of s pring,
+- wars of survival and conquest in their new domain.
+- domain a nd made to wa nder the land incarnated as
+- mu rdered Mystra, the goddess of magic, in her domain
+- contexts. Most vocations have a patron deity: farmers
+- awaited afterlife in the deity's domain. Occasionally, the
+- of land, each temple operates according to the traditions
+- might motivate or inspire changes to those traditions.
+- Domains
+- Circle of seven stars, nine stars encircling a
+- Black dis k encircled with a purple border
+- Domain s
+- oaths, signing contracts, and declaring laws under the
+- is the connection between a solemn oath and the sun
+- runners are cheered on by patrons who come out of
+- circles, attempt to memorize spells, and even when they
+- Circle. They propitiate her with dances while wearing
+- as a patron , and clerics who revere Bhaal often qualify
+- Deneir is the god of literature and literacy, the patron of
+- and scholars devoted, like their patron, to preserving
+- Deneir take an oath of charity as well, compelling them
+- ascribe to Eldath. Tradition dictates that it be a place of
+- to druids, who count Eldath among the First Circle. It
+- telling a lie as a way of beseeching her for aid.
+- Malar as a patron for his ferocity and cruelty. His priests
+- Mask is a trickster god, the patron of ne'er-do-wells,
+- are difficult to attract. She is the patron of rangers in
+- the same way that Milil is the patron of bards, but even
+- are patrons of the arts in addition to being performers
+- instructors in colleges of war, quartermasters, a nd the
+- acting as patrons for promising talents, and by investing
+- most human paladins have Torm as their patron.
+- the price of challenging her domain.
+- against Baldur's Gate. By tradition , the highest officer
+- Duke Ulder Ravengard fulfills that tradition proudly.
+- domains through the very streets of Waterdeep itself.
+- patrons and customers.
+- In the center of the upper city, the Circle still stands
+- of the Myrloch to the south. Druid circles are active in
+- and forges that are the Northlander women's domain.
+- the way of loyalty or cleverness out of them. Hiring too
+- above the pupil. This is Sehanine Moonbow's way of
+- quiet at the bridge. The tradition of caravans camping
+- the Way of the Lion, which is the only road that provides
+- before being permitted to take the oaths of the order.
+- me that traditionally the Keeper and the First Reader
+- my source, for I swore an oath of secrecy. Besides my
+- Creed Resolute, an oath of service to Elturgard and all
+- devised the Creed Resolute. This series of oaths and
+- into the Companions, the oath has since been taken by
+- are, their presence essential to our way of life.
+- handful of streets that encircle a central marketplace,
+- the exclusive domain of the elves. Though game animals
+- their domain. The half-elf was hauled away in slaver's
+- gnome goatherds.
+- it, their traditions and the laws they live by. I came to
+- very seriously. Most taboos and traditions vary from
+- one is a mark of honor and continues a grand tradition
+- dwarves still hold to their ancient ways a nd traditions.
+- traditions, with strong ties to clan. They are gruff and
+- from the clan, rarely forsake their traditions when doing
+- faithfulness , and of oaths, loyalty, and honor.
+- is the patron of the shield dwarves, as well as the god
+- patron of expatriates and guides, and deity of lightning
+- Laduguer is the patron of the duergar, god of magic and
+- then they have traditionally gotten along well with their
+- reject this way of thinking, but it is common enough
+- exceptions, traveling far outside their sylvan domains
+- and spies. Traditionally, male drow are warriors and
+- the winds and weather, as well as patron of the avariel;
+- and therefore patron of male drow, a lthough perhaps
+- patron of many halfting adventurers. Urogalan is the
+- stiff espouse their traditional way of life.
+- races, concerned that their way of life couldn't survive
+- patron of the svirfneblin.
+- human and elven names, as a way of setting half-elves
+- one of the Seldarine as their patron.
+- entered the city by way of ships bringing trade.
+- Only dwarves can follow the Path of the Battlerager.
+- PATH OF THE TOTEM WARRIOR
+- If you follow the Path of the Totem Warrior from the
+- PATH OF THE BATTLERAGER
+- take the Path of the Battlerager. They specialize in
+- are members of the College of Valor, as described in the
+- Bard College class feature in the Player's Handbook.
+- BARDIC COLLEGES
+- In addition to the tradition of apprenticing with a master
+- bard, the Sword Coast has some bardic colleges where
+- each of which is named after one of the colleges. See
+- attended each of the elder colleges, seeking to learn its
+- musical and magical secrets. Traditionally, the colleges
+- COLLEGE OF FOCHLUCAN
+- college's original location under the guidance of Master
+- the Bard College class feature in the Player's Handbook.
+- COLLEGE OF NEW OLAMN
+- Waterdeep, the College of New Olamn is a prestigious
+- bardic college established in the Year of the Staff (1366
+- DR) by wealthy Waterdhavian patrons and named for
+- Olamn belong to the College of Lore, as described in the
+- northern spur, is used to bring goods to the college,
+- COLLEGE OF THE HERALD
+- northwest of Silverymoon, the College of the Herald is
+- the College of Lore, as described in the Bard College
+- Wargong: A metal gong, traditionally made from a
+- typical cleric in Faerun serves a single divine patron,
+- path of the cleric become embittered and seek favor with
+- DIVINE DOMAIN
+- ARCANA DOMAIN
+- Arcana domain know the secrets and potential of magic
+- of the elven pantheon. In other worlds, this domain
+- ARCANA DOMAIN SPELLS
+- dispel magic, magic circle
+- planar binding, teleportation circle
+- 8th, and 9th. You add them to your list of domain spells.
+- Like your other domain spells, they are always prepared
+- forms , as well as the gods of the First Circle, those
+- DRUID CIRCLES
+- the Old Ways of the First Circle have given way to new
+- in or near wild lands do well to learn if a druid circle
+- operates nearby, seeking the circle's blessing before
+- groves, or around sacred pools gave rise to the tradition
+- their point, or even to leave the circle, if they wish, but
+- the circle acts as one for the good of all. Druid circles
+- elves, and the fey creatures of the lancf where the circle
+- Numerous circles are found across Faerfm, usually
+- .of S ecomber, and the Starwater Circle gathers around
+- THE CIRCLE OF SWORDS
+- Protectors of the Neverwinter Wood, the Circle of
+- Swords druids, although some belong to the Circle of
+- Less a druid circle and more a loose confederation of
+- circles and their allies, the Emerald Enclave is devoted
+- Land and Circle of the Moon in equal measure.
+- THE MOONSHEA CIRCLES
+- ringed by standing stone circles, raised by their ancient
+- MARTIAL ARCHETYPE
+- Martial Archetype option , in addition to those in the
+- by Yondalla. Hin Fist monks generally follow the Way of
+- the Open Hand, as described in the Monastic Tradition
+- Monks of this tradition follow the Way of the Long
+- Death, which is described in the "Monastic Traditions"
+- WAY OF THE LONG DEATH
+- Followers of the Way of the Long Death worship the
+- MONASTIC TRADITIONS
+- Monastic Tradition options, in addition to those in the
+- Monks of the Way of the Long Death are obsessed with
+- Starti ng when yo u choose this tradition at 3rd level,
+- WAY OF THE SUN SOUL
+- Monks of the Way of the S un Soul learn to channel their
+- Starting when you choose this tradition at 3rd level, you
+- Devotion and the Oath of the Crown (which is described
+- champions. Those green knights sworn to the Oath of
+- avengers of the Oath of Vengeance follow patrons like
+- unnat ural creatures. Of the options in the Sacred Oath
+- class feature, the Oath of the Crown (described below)
+- and the Oath of Devotion (described in the Player's
+- Of the options in the Sacred Oath class feature in the
+- often follow the Oath of Devotion, although a few zealots
+- are followers of the Oath of Vengeance.
+- SACRED OATH
+- OATH OF THE CROWN
+- who swear this oath dedicate themselves to serving
+- nation or a sovereign, and undergo their oath as part of
+- oaths and laws are meaningless.
+- OATH SPELLS
+- You gain oath spells at the paladin levels listed.
+- OATH OF THE CROWN SPELLS
+- circle of power, geas
+- with circles of druids.
+- god Brandobaris in his aspect as patron of exploration.
+- circles on the mainland often honor the gods of the
+- First Circle, but most rangers a mong huma ns favo r the
+- ROGUISH ARCHETYPES
+- Roguish Archetype options, in addition to those in the
+- this archetype, leading lives of intr igue. Words are your
+- When you choose this archetype at 3rd level, you gain
+- W hen you choose this archetype at 3rd level, yo u learn
+- drawing th e attention of potentia l patrons even from
+- PATRONS IN THE REALMS
+- patrons able to offer them arcane power.
+- through the surface of a pool , stepping into a circle of
+- OTHERWORLDLY PATRON
+- Otherworldly Patron option, in addition to those in the
+- In the Realms, Undying patrons include Larloch the
+- ARCANE TRADITION
+- sword fighting grounded in a tradition of arcane magic.
+- arcane tradition. In the world of Faerfln, elves closely
+- You create a momentary circle of spectral blades that
+- trained in that ancient tradition. For years yo u labored
+- dwarf, however, you have ta ken a solemn oath never
+- traditions of craftsmanship.
+- idea ls, a nd the clergy of the order's patron gods.
+- rangers, barbaria n tribes, druid circles, and priests who
+- I be gin or end my da y with small traditional ritua ls
+- Suspicious. I must be carefu l, for I have no way of
+- oaths to achieve a certain goal. The nat ure of this goal
+- Tradition and taboo have kept the Uthgardt strong
+- tradition, but you seek to bring glory to your tribe by
+- including members of druid circles, tribes of nomadic
+- gods of the First Circle.
+- now), you hold to the traditions of your people. You will
+- but most prefer the martial aspect of the Way of the
+- saga. A character opting for the Path of the Battlerager
+- Arcana Domain.
+- gods in return for power, and the Undying patron is a
+- take this domain.
+- the Way of the Sun Soul is the perfect option for monks
+- who take this oath, especia lly those whose fanaticism
+- Among the Scarlet Brotherhood, the Way of the Long
+- Both Iuz and Vecna fit the Undying patron's role. Iuz,
+- magic, the Arcana Domain works well for religious
+- You've probably noticed that the Way of the Long Death
+- and the Way of the Sun Soul are both handy tools for
+- the Way of the Sun Soul.
+- arcane tradition (wizard) , 141
+- Circle of Swords, 127
+- divine domain, 125- 26
+- dru id circles, 126-27
+- College of Fochlucan, 123
+- College of New Olamn, 123
+- College of the Herald, 124
+- bardic colleges, 123-24
+- martial archetype , 128
+- monastic traditions , 130- 31
+- Way of the Long Death, 130-3 l
+- Way of the Sun Soul, 131
+- Oath of the Crown (paladin), 132- 33
+- otherworldly patrons, 138-40
+- Oath of the Crown , 132- 33
+- Path of the Battlerager (barba rian) ,
+- Path of the Totem Warrior
+- patrons, otherworldly, 138-40
+- Path of the Battlerager, 121
+- Path of the Totem Warrior,
+- roguish archetypes , 13S- 36
+- sacred oath , 132- 33
+- Oath of the Crown, 132- 33
+- Way of the Long Death (monk) ,
+- Way of the Sun Soul (monk), 131
+
+## Spells (2)
+
+- Evocation cantrip
+- Conjuration cantrip

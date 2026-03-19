@@ -1,0 +1,293 @@
+# D&D 5e Dungeon Master's Guide — Magic Items
+
+*Extracted from PDF — 289 items*
+
+- **- e protagonists are motivated more by greed and selfrerest than by altruistic virtue. Fighter, rogue, and** — Wondrous item, Common
+- **-Rampage; darkvision 60ft.** — Wondrous item, Common
+- **1. IDENTIFY THE PARTY'S GOALS** — Wondrous item, Common
+- **120ft.; speaks Elvish and Undercommon** — Dwarven Resilience, Common
+- **Amphibious , Otherworldly Perception , Slippery, Sunlight Sensitivity; speed 30ft. , swim** — Wondrous item, Common
+- **Amphibious; speed 10ft., swim 40ft.; speaks Aquan and Common** — Wondrous item, Common
+- **Appendix B of the Monster Manual contains stat blocks** — Wondrous item, Common
+- **At the start of their careers, characters use 1sta nd 2nd-level spells and wield mundane gear. The** — Wondrous item, Common
+- **Blind Senses, Keen Hearing and Smell, StoAe Camouflage; can't be blinded; blindsight 30** — ft., Common
+- **Brave , Halfling Nimbleness , Lucky; Small size; speed 25ft.; speaks Common and Halfling** — Wondrous item, Common
+- **Breath Weapon (use challenge rating instead of level to determine damage), Damage** — Resistance, Common
+- **Bullies. The characters witness ld4 + 2 bullies** — Wondrous item, Common
+- **Common and Ore** — Brave, Common
+- **Draconic** — Amphibious; speed 10ft., Common
+- **Enthusiastic** — Wondrous item, Common
+- **Fey Ancestry, Inn ate Spellcasting feature of the drow, Sunlight Sensitivity; darkvision** — Wondrous item, Common
+- **Fey Ancestry, Trance; darkvision 60ft. ; proficiency in the Perception skil l; speaks** — Wondrous item, Common
+- **GOVERNMENT** — In the feudal society common in most D&D worlds, Common
+- **GREAT ADVENTURE** — Wondrous item, Common
+- **How unusual are members of each spellcasting** — Wondrous item, Common
+- **In a D&D game, such events provide the sparks that** — Wondrous item, Common
+- **Infernal Legacy (use challenge rating instead of level to determine spells), resistance to** — Wondrous item, Common
+- **Intrigue adventures are event-based adventures that** — Wondrous item, Common
+- **John Silver voice. Let intelligent monsters unfamiliar** — Wondrous item, Common
+- **Martial Advantage; darkvision 60ft.; speaks Common and Goblin** — Ambusher, Common
+- **Monsters** — Baboon, Common
+- **Only a few things can sever a traveler's silver cord, the** — Wondrous item, Common
+- **RARITY** — Each magic item has a rarity: common, Common
+- **Ra rity** — Wondrous item, Common
+- **Relentless Endurance; darkvision 60ft.; proficiency in the Intimidation skill; speaks** — Wondrous item, Common
+- **T he weapon can speak, read, and understand** — Common, Common
+- **The weapon communicates telepathically with its** — wielder and can speak, Common
+- **Triangular silver pieces are ravens, diamond-shaped** — Wondrous item, Common
+- **_ dventures," for guidance.** — Wondrous item, Common
+- **_ ·rement is met. A portal can have any conceivable** — - ement, Common
+- **_tia campaign. The Wuxia Weapon Names table** — Wondrous item, Common
+- **a nd wondrous items. Magic items also have rarities:** — common, Common
+- **ability for these spells.** — Languages. You can speak, Common
+- **adventurers are likely to know about. If the adventurers** — Wondrous item, Common
+- **after a legendary bard college. The following table lists** — the spells common to all instruments, Common
+- **an episodic format , with the characters as the only** — common element, Common
+- **ancient magic items, trade in these items might be more** — common. Even so, Common
+- **banners , and pennants** — Wondrous item, Common
+- **battles, however, are easier to run with visual aids, the** — Wondrous item, Common
+- **but their reckless emotions sometimes break free with** — Wondrous item, Common
+- **by a powerful wizard? What if magic item shops are** — Wondrous item, Common
+- **characters can destroy any destructible object. Use** — Wondrous item, Common
+- **combatants a simple way to gain advantage on attack** — Wondrous item, Common
+- **common folk are more likely to have access to and use** — Wondrous item, Common
+- **confer, in the form of a once-per-day or similarly limited** — property. For example, Common
+- **cured, but the specifics of how a disease works aren't** — Wondrous item, Common
+- **darkvision 120ft.; speaks Gnomish, Terran, and Undercommon** — Wondrous item, Common
+- **dead god or other chunks of rock drifting forever in the** — silvery void. Much more commonplace are color poolsmagical pools of colored light that flicker like radiant, Common
+- **destroy monsters or villains.** — Wondrous item, Common
+- **dle fa ithful of a specific temple.** — Wondrous item, Common
+- **dwarves, elves, and humans who live in one kingdom** — speak a common language, Common
+- **everyday currency.** — Wondrous item, Common
+- **extensive example of currencies. Although barter,** — blood notes, Common
+- **extraordinarily skillful, collapsed passages can be** — commonplace, Common
+- **failures or successes aren't added together. For** — example, Common
+- **fo rmulas exist for legendary item s.** — Wondrous item, Common
+- **ft. , or 10ft. while deafened (blind beyond this radius); speaks Undercommon** — Wondrous item, Common
+- **gear they need to pursue their adventures. Provisions,** — tents, Common
+- **hands of evildoers. Conversely, in the world of Eberron,** — Wondrous item, Common
+- **if your monster is roughly as smart as a human** — commoner, Common
+- **in disputes and criminal trials. These reeves, sheriffs,** — Wondrous item, Common
+- **in this regard due to the nature of their profession.** — A character who comes into possession of a common, Common
+- **league or federation that promotes (at least in theory)** — Wondrous item, Common
+- **make minor tweaks, such as replacing the quaggoth's** — language, Common
+- **most magic items are so rare that they aren't available** — for purchase. Common items, Common
+- **mountains are unblemished by erosion. Everything on** — Wondrous item, Common
+- **of its Mimicry trait** — ·Pack Tactics, Common
+- **of nations.** — Wondrous item, Common
+- **of specialization. But even 1st-level characters are** — heroes, Common
+- **particular object; the item acts much like a key to** — Wondrous item, Common
+- **pattern underlying the crimes. Though serial killers are** — a common example of this type of villain, Common
+- **pew, a nd listening to a sermon is a mode of worship** — "oreign to most fantasy religions. More commonly, Common
+- **philosophy to deny the existence of deities, although a** — Wondrous item, Common
+- **rar ity of the item it allows a character to create. Formulas for** — common and uncommon items might even be for sale, Common
+- **revulsion and anguish. Often it arises when adventurer** — Wondrous item, Common
+- **school specialization without any formal training.** — However, Common
+- **shouldn't allow die rolling to override clever play and** — good planning. Use your common sense, Common
+- **somewhere or touches something that the trap's creator** — Wondrous item, Common
+- **spells are common, as in Eberron, then authorities and** — Wondrous item, Common
+- **story explores. Your campaign doesn't have to be a work** — of literature, Common
+- **such as bolts of slaying meant for a crossbow, though** — Wondrous item, Common
+- **terrain made of sculpted plaster or resin are also fu n.** — Wondrous item, Common
+- **tha n the item it allows a character to create. For example,** — Wondrous item, Common
+- **the world and made names for themselves through the brave deeds.** — Wondrous item, Common
+- **their craft everywhere. The magic can be as innocuous** — Wondrous item, Common
+- **their descendants. Some lords and ladies began as** — Wondrous item, Common
+- **through them. The vision can penetrate 1 foot of stone,** — 1 inch of common metal, Common
+- **to make sense of the jumble of planes, particularly the** — Wondrous item, Common
+- **to others. For example, if spell casters of low-level** — spells are common, Common
+- **to radiant damage to reflect their celestial nature.** — However, Common
+- **war fueled by political intrigue. On the continent of** — Khorvaire, Common
+- **were once part of a great empire, and magically aided** — Wondrous item, Common
+- **who live there now. Spiderweb decorations, torture** — chambers, Common
+- **wielder and can speak, read, and understand Abyssal** — Wondrous item, Common
+- **you can craft a broad range of adventures that aren't** — Wondrous item, Common
+- **your world:** — Wondrous item, Common
+- **~2.D be multiple doors to the Infinite Staircase,** — Wondrous item, Common
+- **·Gnome Cunning, Innate Spellcasting, Stone Camouflage; Small size; speed 20ft.;** — darkvision 120ft.; speaks Gnomish, Common
+- **·ctims frequently succumb to fits of mad laughter,** — Wondrous item, Common
+- **20,000 gp plus ldlO x 250 gp,** — two uncommon magic items, Uncommon
+- **5,000 gp plus ldlO x 250 gp,** — one uncommon magic item, Uncommon
+- **500 gp plus ldlO x 25 gp,** — one uncommon magic item, Uncommon
+- **A character who comes into possession of a common,** — uncommon, Uncommon
+- **Common** — Wondrous item, Uncommon
+- **Doss lute** — Uncommon Animal friendship, Uncommon
+- **Fochlucan** — Uncommon Entangle, Uncommon
+- **R on OF THE PACT KEEPER** — ~o d, Uncommon
+- **WAND OF SECRETS** — Wand, Uncommon
+- **cast magic missile. That same character could make** — a +1 weapon (another uncommon item), Uncommon
+- **example, if the character finds a buyer for a common** — Wondrous item, Uncommon
+- **existence.** — Wondrous item, Uncommon
+- **magic items they find include common consumable** — Wondrous item, Uncommon
+- **speak with animals** — Mac-Fuirmidh Uncommon Barkskin, Uncommon
+- **their adventures. They start acquiring more permanent** — magic items (uncommon and rare ones) as well, Uncommon
+- **then gradually lost as a result of wars, cataclysms, and** — Wondrous item, Uncommon
+- **· AND OF MAGIC DETECTION** — {and, Uncommon
+- **· AND OF MAGIC MISSILES** — and, Uncommon
+- **·oral cost is paid. The character is ass limed to work for 8** — ._, Uncommon
+- **-e the classic villains of these settings. Magic items are** — Wondrous item, Rare
+- **5 days have passed.** — Wondrous item, Rare
+- **9th-level spells such as wish , gate , storm of vengeance ,** — Wondrous item, Rare
+- **A campaign in the style of an episodic television show** — Wondrous item, Rare
+- **AND OF LIGHTNING BOLTS** — -land, Rare (requires attunement)
+- **Armor (shield), uncommon (+1), rare (+2), or very** — Wondrous item, Rare
+- **Cities that hold more than twenty-five thousand people** — Wondrous item, Rare
+- **Each magic item has a rarity: common, uncommon,** — rare, Rare
+- **Even city-states mint their own copper, silver, and gold** — Wondrous item, Rare
+- **Extras are the characters and creatures in the** — background that the main characters rarely, Rare
+- **IGNORING THE DICE** — Wondrous item, Rare
+- **Is some magic common? Is some socially** — Wondrous item, Rare
+- **Meanwhile, the party's rogue might have looted a box** — Wondrous item, Rare
+- **Monsters Are Uncommo"n. What if monsters are** — rare and terrifying? In the Ravenloft setting, Rare
+- **Player's Handbook.** — Wondrous item, Rare
+- **RANDOM DUNGEON HAZARDS** — Hazards are rarely found in inhabited areas, Rare
+- **Some DMs prefer to run a social interaction as a** — free-form roleplaying exercise, Rare
+- **The weather on the plane is a lesson in extremes.** — If the sea isn't calm, Rare
+- **Uncommon** — Wondrous item, Rare
+- **Unless you decide your campaign works otherwise,** — Wondrous item, Rare
+- **WAND OF PARALYSIS** — IVand, Rare (requires attunement)
+- **Wand, artifact (requires attunement)** — Wondrous item, Rare
+- **Weapon (any sword that deals slashing damage), very·** — Wondrous item, Rare (requires attunement)
+- **You can award a formula in place of a magic item. Usuall y** — written in a book or on a scroll, Rare
+- **You determine a buyer's identity. Buyers sometimes** — Wondrous item, Rare
+- **additional cards beyond your declared draws.** — Wondrous item, Rare
+- **and commonplace as a potion that heals wounds to** — something much more rare and impressive, Rare
+- **and consult its lore freely, while others must donate** — Wondrous item, Rare
+- **and its evils through asceticism and contemplation.** — Wondrous item, Rare
+- **better than a cast of well-developed NPCs. That said,** — Wondrous item, Rare
+- **blazing fire , crystal-clear water, and unsullied air. Any** — Wondrous item, Rare
+- **class? How common are those who can cast highlevel spells?** — How rare are magic items, Rare
+- **devoted individuals become priests by setting up a** — shrine or helping to staff a holy site. Much more rarely, Rare
+- **environment of total darkness can be visible for miles,** — Wondrous item, Rare
+- **exist in your world. Wizards (and bards and druids)** — Wondrous item, Rare
+- **exotic pleasures: finely prepared foods , scented oils, and** — Wondrous item, Rare
+- **feature few or no characters with healing magic, or for** — Wondrous item, Rare
+- **hapter 5, "Adventure Environme nts"). The deeper** — one goes into the plane, Rare
+- **have passed.** — Wondrous item, Rare
+- **he or she hits with it, that item will likely unbalance your** — game. On the other hand, Rare
+- **horns and a cool demeanor. He trades in souls, asv o** — other archdevils, Rare
+- **impact. The adventurers find rare magic items (and very** — Wondrous item, Rare
+- **interactions among other PCs. and in which combat is** — Wondrous item, Rare
+- **license or official permission. In such a place, magic** — items and continual magical effects are rare, Rare
+- **magic item in 2 days and a buyer for an uncommon item** — in 5 days, Rare
+- **magically adjust themselves to the wearer.** — Wondrous item, Rare
+- **missions. A high-ranking character might be able to** — call on a small army, Rare
+- **monsters or discovered in long-lost vaults. Such** — Wondrous item, Rare
+- **nightmare reverts to figurine form.** — Wondrous item, Rare
+- **occur than encounters placed at the beginning or end** — Wondrous item, Rare
+- **on the number of blessings a character can receive,** — Wondrous item, Rare
+- **orbits your head.** — Wondrous item, Rare
+- **populace lives in perpetual terror of these darklords** — and their evil minions, Rare
+- **populations require considerable support from both** — urrounding villages and trade routes, Rare
+- **restored by magic such as Jesser restoration or heal.** — Wondrous item, Rare
+- **specified in the figurine's description.** — Wondrous item, Rare
+- **that catches the attention of both gods and mortals.** — Wondrous item, Rare
+- **that point introduces new effects with an equally large** — Wondrous item, Rare
+- **the benefit of a 1st-level spell once per day (or just once,** — if it's consumable). A rare, Rare
+- **three uncommon magic items ,** — two rare items, Rare
+- **three uncommon magic items,** — one rare item, Rare
+- **time is doubled. Less often, a group is blown into the** — Border Ethereal of a random plane. Rarely, Rare
+- **to character level, as shown in the Magic Item Rarity .** — Wondrous item, Rare
+- **two uncom mon magic items ,** — one rare item, Rare
+- **ubterranean tunnels and aboveground ruins are often** — Wondrous item, Rare
+- **understand what the object is, but the characters** — Wondrous item, Rare
+- **until 7 days have passed.** — Wondrous item, Rare
+- **virtue, providing guidance for defeating evil.** — Wondrous item, Rare
+- **weren't true in my world?"** — Wondrous item, Rare
+- **your head, provided that you have at least 1 hit point.** — Wondrous item, Rare
+- **your head.** — Wondrous item, Rare
+- **• O n OF RULERSHIP** — ~od, Rare (requires attunement)
+- **(requires attunement)** — The typical crystal ball, Very Rare
+- **:?ROST BRAND** — ~eapon (any sword), Very Rare (requires attunement)
+- **Carpet of flying** — Wondrous item, Very Rare
+- **Rare** — Wondrous item, Very Rare
+- **Ver y rare** — Wondrous item, Very Rare
+- **Very rare** — Wondrous item, Very Rare
+- **WAND OF POLYMORPH** — Wand, Very Rare (requires attunement)
+- **Weapon (any ammunition), uncommon (+1), rare (+2), or** — Wondrous item, Very Rare
+- **and astral projection. Characters have several rare** — and very rare magic items at their disposal, Very Rare
+- **can't be summoned, and they are almost always removed** — Wondrous item, Very Rare
+- **cancel it.** — Wondrous item, Very Rare
+- **da rk blue rhomboid orbits your head.** — Wondrous item, Very Rare
+- **it, freeing up space.** — Wondrous item, Very Rare
+- **s phere orbits your head.** — Wondrous item, Very Rare
+- **scarlet and blue sphere orbits your head.** — Wondrous item, Very Rare
+- **used again until 7 days have passed.** — Wondrous item, Very Rare
+- **worn while it orbits your head.** — Wondrous item, Very Rare
+- **(save DC 17) with it.** — Wondrous item, Legendary
+- **Armor (light, medium, or heavy), rare (+1), very rare (+2),** — Wondrous item, Legendary
+- **Cloak of invisibility** — Wondrous item, Legendary
+- **In the world of Greyhawk, only nine of these blades are** — Wondrous item, Legendary
+- **Leadership** — Wondrous item, Legendary
+- **Legendary** — Wondrous item, Legendary
+- **O n OF RESURRECTION** — ~od, Legendary (requires attunement)
+- **Seven types of these instruments exist, each named** — Wondrous item, Legendary
+- **Weapon (any sword that deals slashing damage),** — Wondrous item, Legendary (requires attunement)
+- **When adventurers travel to other planes of existence,** — Wondrous item, Legendary
+- **Wondrous item, rare (silver or brass), very rare (bronze),** — Wondrous item, Legendary
+- **account for special off-turn damage-dealing features ,** — such as auras, Legendary
+- **and very rare magic items at their disposal, and begin** — Wondrous item, Legendary
+- **immune to this effect if it is immune to slashing damage,** — doesn't have or need a head, Legendary
+- **monsters that are particularly fond of amassing** — Wondrous item, Legendary
+- **most common being a psychic wind (described below).** — Wondrous item, Legendary
+- **of a charm, as might a character who solves a sphinx's** — Wondrous item, Legendary
+- **of the world. Sometimes an omen points to change** — for the good, Legendary
+- **pink and green sphere orbits your head.** — Wondrous item, Legendary
+- **point in their lives. It permeates the cosmos and moves** — through the ancient possessions of legendary heroes, Legendary
+- **powerful spirit, a location of ancient magic, or a creature** — that has legendary actions. Unlike a magic item, Legendary
+- **rhomboid orbits your head.** — Wondrous item, Legendary
+- **s hunned by others.** — Conversely, Legendary
+- **such as a potion of healing, are the most plentiful. Some** — legendary items, Legendary
+- **th e formula for a common magic item is uncommon . No** — Wondrous item, Legendary
+- **this dusty rose prism orbits your head.** — Wondrous item, Legendary
+- **with the upper torso and head of a hairless, horned** — humanoid. Mammon's greed is legendary, Legendary
+- **150-214** — artifacts, Artifact
+- **ARTIFACTS** — An artifact is a unique magic item of tremendous power, Artifact
+- **An artifact is a unique magic item of tremendous power,** — Wondrous item, Artifact
+- **BOOK OF EXALTED DEEDS** — Wondrous item, Artifact (requires attunement)
+- **BOOK OF VILE DARKNESS** — Wondrous item, Artifact (requires attunement)
+- **Call Dragons. While you control the orb, you can use** — Wondrous item, Artifact
+- **Characters don't typically find artifacts in the** — normal course of adventuri ng. In fac t, Artifact
+- **DESTROYING ARTIFACTS** — Wondrous item, Artifact
+- **In a similar type of quest campaign, the adventurers** — Wondrous item, Artifact
+- **Oblivion can't be found again for at least a century. Now** — and then, Artifact
+- **Of Vecna, all that remained were one hand and one eye,** — Wondrous item, Artifact
+- **Otherwise, it is impervious to damage.** — Wondrous item, Artifact
+- **SAMPLE ARTIFACTS** — Wondrous item, Artifact
+- **Sentient Magic Items ................................................. 214** — Wondrous item, Artifact
+- **SwoRD OF KAs** — Wondrous item, Artifact (requires attunement)
+- **Talons. Every magic item you wear or carry** — Wondrous item, Artifact
+- **The artifact must be dropped into the River Styx.** — Wondrous item, Artifact
+- **The sphere obliterates all matter it passes through** — Wondrous item, Artifact
+- **To attune to the eye, you must gouge out your own eye** — Wondrous item, Artifact
+- **To attune to the hand , you must lop off your left** — Wondrous item, Artifact
+- **Typical Quests. Typical Harper quests include securing** — Wondrous item, Artifact
+- **a 10 percent chance that you attract the attention** — Wondrous item, Artifact
+- **a lso inve nt new beneficial and detrimental properties.** — Wondrous item, Artifact
+- **adventurers need to overcome their greatest challenge.** — Wondrous item, Artifact
+- **and all matter that passes through it. Artifacts are the** — Wondrous item, Artifact
+- **are scattered in ruins across the multi verse, before** — Wondrous item, Artifact
+- **armor, magi c, 139** — artifacts, Artifact
+- **case, introducing a n artifac t into a campaign requires** — Wondrous item, Artifact
+- **corrupted by the Eye and Hand of Vecna. The sword's** — Wondrous item, Artifact
+- **desert monsters , 302** — destroying artifacts, Artifact
+- **drink six times the normal amount each day.** — While you are attuned to the artifact, Artifact
+- **effects such as psychic wind or the howling winds of** — Wondrous item, Artifact
+- **extensive research or the successful completion of a** — Wondrous item, Artifact
+- **forge, or crucible in which it was created.** — Wondrous item, Artifact
+- **gears of Mechanus.** — The artifact must be returned to its creator, Artifact
+- **individuals interested in buying magic items. Legendary** — Wondrous item, Artifact
+- **is destroyed, its contents are lost forever, although** — Wondrous item, Artifact
+- **items, other than potions and scrolls, have resistance** — to all damage. Artifacts are practically indestructible, Artifact
+- **more of D&D worlds. Use them as guides when creating** — yo ur own artifacts, Artifact
+- **or an angel.** — Wondrous item, Artifact
+- **other magic items do, and the properties a re often** — Wondrous item, Artifact
+- **plot devices as magic items . Tracking down a nd** — Wondrous item, Artifact
+- **plundering or stealing a treasure hoard, powerful magic item ,** — Wondrous item, Artifact
+- **something else particularly notable. A character might** — gain an epic boon after destroying an evil artifact, Artifact
+- **tarrasque or some other ancient creature.** — Wondrous item, Artifact
+- **the Eye of Vecna and the Hand of Vecna can use the** — Wondrous item, Artifact
+- **them , he forged the Axe of the Dwarvish Lords.** — Armed with the artifact, Artifact
+- **to ash, and are destroyed forever. Any other attempt to** — destroy the eye or hand seems to work, Artifact
+- **venturing into one ancient ruin after another in search** — Wondrous item, Artifact
+- **weapon crafted for that purpose.** — Wondrous item, Artifact
